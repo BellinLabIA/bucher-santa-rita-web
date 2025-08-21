@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Menu, X } from "lucide-react";
 import { useState } from "react";
+import azulLogo from "@/assets/azul-logo.png";
 
 
 const Header = () => {
@@ -18,11 +19,13 @@ const Header = () => {
     <header className="fixed top-0 left-0 right-0 z-50 bg-background/95 backdrop-blur-sm border-b border-border">
       <div className="container mx-auto px-4 py-4">
         <div className="flex items-center justify-between">
-          {/* Logo azul en header - placeholder temporal */}
+          {/* Logo azul en header */}
           <div className="h-12 flex items-center">
-            <div className="h-12 bg-corp-navy px-6 rounded flex items-center justify-center">
-              <span className="text-white font-playfair text-lg font-bold">BÜCHER SANTA RITA</span>
-            </div>
+            <img 
+              src={azulLogo} 
+              alt="Bücher Santa Rita Abogados" 
+              className="h-12 w-auto"
+            />
           </div>
 
           {/* Desktop Navigation */}
