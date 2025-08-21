@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
 import cdmxHero from "@/assets/cdmx-legal-hero.jpg";
-// import grisLogo from "@/assets/gris-logo.png";
+import azulLogo from "@/assets/azul-logo.png";
 
 
 const HeroSection = () => {
@@ -28,10 +28,11 @@ const HeroSection = () => {
         {/* Logo gris en centro del hero */}
         <div className="mb-12 flex justify-center">
           <div className="h-40 md:h-48 lg:h-56 bg-white/10 backdrop-blur-sm rounded-lg px-8 flex items-center justify-center">
-            <span className="text-white font-playfair text-2xl md:text-3xl lg:text-4xl font-bold text-center">
-              BÜCHER<br/>SANTA RITA<br/>
-              <span className="text-lg md:text-xl lg:text-2xl font-normal">Abogados</span>
-            </span>
+            <img 
+              src={azulLogo} 
+              alt="Bücher Santa Rita Abogados" 
+              className="h-24 md:h-28 lg:h-32 w-auto object-contain"
+            />
           </div>
         </div>
 
