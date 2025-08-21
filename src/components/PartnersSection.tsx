@@ -1,136 +1,61 @@
-import { Card, CardContent } from "@/components/ui/card";
-import { Badge } from "@/components/ui/badge";
-import teamLawyers from "@/assets/team-lawyers.jpg";
+import karlBucher from "@/assets/karl-bucher.jpg";
+import gilbertoSantaRita from "@/assets/gilberto-santa-rita.jpg";
 
 const PartnersSection = () => {
-  const partners = [
-    {
-      name: "Lic. María Elena Bücher",
-      position: "Socia Fundadora",
-      specialty: "Derecho Penal Federal",
-      experience: "25 años de experiencia",
-      education: "Universidad Nacional Autónoma de México",
-      certifications: ["Especialista en Derecho Penal", "Maestría en Ciencias Penales"],
-      description: "Especialista en delitos federales con amplia experiencia en casos de alto perfil. Reconocida por su dedicación y resultados excepcionales."
-    },
-    {
-      name: "Lic. Carlos Santa Rita",
-      position: "Socio Fundador",
-      specialty: "Derecho Penal Empresarial",
-      experience: "22 años de experiencia",
-      education: "Universidad Iberoamericana",
-      certifications: ["Especialista en Compliance", "Certificación en Lavado de Dinero"],
-      description: "Experto en delitos económicos y empresariales. Líder en la implementación de programas de cumplimiento normativo."
-    },
-    {
-      name: "Lic. Ana Patricia Morales",
-      position: "Socia Asociada",
-      specialty: "Derecho Penal Juvenil",
-      experience: "15 años de experiencia",
-      education: "Universidad Panamericana",
-      certifications: ["Especialista en Justicia Juvenil", "Mediación Penal"],
-      description: "Especializada en justicia juvenil y mediación penal. Comprometida con la protección de los derechos de menores de edad."
-    }
-  ];
-
   return (
-    <section id="socios" className="py-20 bg-law-gray-light">
+    <section id="socios" className="py-20 bg-corp-navy">
       <div className="container mx-auto px-4">
-        <div className="max-w-4xl mx-auto text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bodoni font-bold text-law-navy mb-6">
-            Nuestros <span className="text-primary">Socios</span>
+        <div className="text-center mb-16">
+          <h2 className="text-4xl md:text-5xl font-playfair font-bold text-white mb-8">
+            Socios Fundadores
           </h2>
-          <p className="text-lg text-law-gray leading-relaxed mb-8">
-            Un equipo de profesionales altamente calificados con décadas de experiencia 
-            en derecho penal, comprometidos con la excelencia en cada caso.
-          </p>
-          
-          {/* Team Image */}
-          <div className="mb-16 rounded-lg overflow-hidden shadow-lg">
-            <img 
-              src={teamLawyers}
-              alt="Equipo de abogados de Bücher Santa Rita"
-              className="w-full h-64 md:h-80 object-cover"
-            />
+          <div className="w-24 h-1 bg-primary mx-auto"></div>
+        </div>
+
+        <div className="max-w-6xl mx-auto space-y-16">
+          {/* Karl Bucher */}
+          <div className="flex flex-col lg:flex-row items-center gap-12 bg-white/5 backdrop-blur-sm rounded-2xl p-8 lg:p-12">
+            <div className="lg:w-1/3">
+              <img 
+                src={karlBucher}
+                alt="Karl Bucher"
+                className="w-64 h-64 object-cover rounded-xl mx-auto shadow-2xl"
+              />
+            </div>
+            <div className="lg:w-2/3 text-center lg:text-left">
+              <h3 className="text-3xl font-playfair font-bold text-white mb-4">
+                Karl Bucher
+              </h3>
+              <div className="w-16 h-1 bg-primary mb-6 mx-auto lg:mx-0"></div>
+              <p className="text-white/90 font-open-sans text-lg leading-relaxed">
+                Especialista en delitos de cuello blanco, con más de 15 años de experiencia 
+                en el ámbito penal. Su formación especializada en argumentación jurídica y 
+                razonamiento probatorio lo posiciona como uno de los litigantes más respetados 
+                en el sector. Ha participado en casos de alta complejidad y relevancia nacional.
+              </p>
+            </div>
           </div>
-        </div>
 
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
-          {partners.map((partner, index) => (
-            <Card key={index} className="h-full border-law-gold/20 hover:border-law-gold/40 transition-all duration-300 hover:shadow-lg bg-white">
-              <CardContent className="p-8">
-                {/* Profile placeholder */}
-                <div className="w-24 h-24 bg-law-navy rounded-full mx-auto mb-6 flex items-center justify-center">
-                  <span className="text-white font-bodoni text-2xl">
-                    {partner.name.split(' ')[1]?.[0]}{partner.name.split(' ')[2]?.[0]}
-                  </span>
-                </div>
-
-                <div className="text-center mb-6">
-                  <h3 className="text-xl font-bodoni font-bold text-law-navy mb-2">
-                    {partner.name}
-                  </h3>
-                  <p className="text-primary font-semibold mb-2">{partner.position}</p>
-                  <Badge variant="outline" className="border-law-gold text-law-navy">
-                    {partner.specialty}
-                  </Badge>
-                </div>
-
-                <div className="space-y-4 text-sm">
-                  <div>
-                    <p className="font-semibold text-law-navy mb-1">Experiencia:</p>
-                    <p className="text-law-gray">{partner.experience}</p>
-                  </div>
-
-                  <div>
-                    <p className="font-semibold text-law-navy mb-1">Educación:</p>
-                    <p className="text-law-gray">{partner.education}</p>
-                  </div>
-
-                  <div>
-                    <p className="font-semibold text-law-navy mb-1">Certificaciones:</p>
-                    <ul className="text-law-gray space-y-1">
-                      {partner.certifications.map((cert, certIndex) => (
-                        <li key={certIndex} className="flex items-center">
-                          <div className="w-1.5 h-1.5 bg-primary rounded-full mr-2 flex-shrink-0"></div>
-                          {cert}
-                        </li>
-                      ))}
-                    </ul>
-                  </div>
-
-                  <div>
-                    <p className="text-law-gray leading-relaxed mt-4">
-                      {partner.description}
-                    </p>
-                  </div>
-                </div>
-              </CardContent>
-            </Card>
-          ))}
-        </div>
-
-        {/* Additional team info */}
-        <div className="mt-16 bg-white rounded-lg p-8 md:p-12 text-center">
-          <h3 className="text-2xl font-bodoni font-bold text-law-navy mb-6">
-            Respaldo <span className="text-primary">Profesional</span>
-          </h3>
-          <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
-            <div>
-              <div className="text-3xl font-bodoni font-bold text-primary mb-2">3</div>
-              <div className="text-law-gray">Socios Principales</div>
+          {/* Gilberto Santa Rita Tamés */}
+          <div className="flex flex-col lg:flex-row-reverse items-center gap-12 bg-white/5 backdrop-blur-sm rounded-2xl p-8 lg:p-12">
+            <div className="lg:w-1/3">
+              <img 
+                src={gilbertoSantaRita}
+                alt="Gilberto Santa Rita Tamés"
+                className="w-64 h-64 object-cover rounded-xl mx-auto shadow-2xl"
+              />
             </div>
-            <div>
-              <div className="text-3xl font-bodoni font-bold text-primary mb-2">62+</div>
-              <div className="text-law-gray">Años de Experiencia Combinada</div>
-            </div>
-            <div>
-              <div className="text-3xl font-bodoni font-bold text-primary mb-2">15+</div>
-              <div className="text-law-gray">Especialidades Legales</div>
-            </div>
-            <div>
-              <div className="text-3xl font-bodoni font-bold text-primary mb-2">100%</div>
-              <div className="text-law-gray">Dedicación al Cliente</div>
+            <div className="lg:w-2/3 text-center lg:text-left">
+              <h3 className="text-3xl font-playfair font-bold text-white mb-4">
+                Gilberto Santa Rita Tamés
+              </h3>
+              <div className="w-16 h-1 bg-primary mb-6 mx-auto lg:mx-0"></div>
+              <p className="text-white/90 font-open-sans text-lg leading-relaxed">
+                Doctor en Derecho Penal y Procesal. Reconocido académico, investigador y 
+                autor de múltiples libros jurídicos especializados en materia penal. 
+                Asesor estratégico en casos de relevancia nacional y consultor de instituciones 
+                gubernamentales en temas de justicia penal.
+              </p>
             </div>
           </div>
         </div>

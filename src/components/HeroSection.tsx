@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
-import cdmxHero from "@/assets/cdmx-hero.jpg";
+import cdmxHero from "@/assets/cdmx-legal-hero.jpg";
+import grisLogo from "@/assets/gris-logo.png";
 
 const HeroSection = () => {
   const scrollToContact = () => {
@@ -23,53 +24,50 @@ const HeroSection = () => {
 
       {/* Content */}
       <div className="relative z-10 text-center text-white px-4 max-w-4xl mx-auto">
-        {/* Logo placeholder - will be replaced with gray logo */}
-        <div className="mb-8 flex justify-center">
-          <div className="w-80 h-32 bg-white/10 backdrop-blur-sm rounded flex items-center justify-center">
-            <span className="text-white font-bodoni text-2xl">BÜCHER SANTA RITA</span>
-          </div>
+        {/* Logo gris en centro del hero */}
+        <div className="mb-12 flex justify-center">
+          <img 
+            src={grisLogo} 
+            alt="Bücher Santa Rita Abogados" 
+            className="h-40 w-auto md:h-48 lg:h-56"
+          />
         </div>
 
-        <h1 className="text-4xl md:text-6xl lg:text-7xl font-bodoni font-bold mb-6">
-          Defensa Legal <span className="text-primary">Especializada</span>
-        </h1>
-        
-        <p className="text-xl md:text-2xl mb-8 text-white/90 max-w-3xl mx-auto leading-relaxed">
-          Más de dos décadas de experiencia en derecho penal. 
-          Protegemos sus derechos con dedicación y profesionalismo en la Ciudad de México.
-        </p>
+        <h2 className="text-2xl md:text-4xl lg:text-5xl font-playfair font-normal mb-8 text-white/90">
+          Despacho Penalista de Excelencia
+        </h2>
 
-        <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
+        <div className="flex flex-col sm:flex-row gap-6 justify-center items-center">
           <Button 
             size="lg"
             onClick={scrollToContact}
-            className="bg-primary hover:bg-primary/90 text-primary-foreground font-bodoni text-lg px-8 py-4"
+            className="bg-primary hover:bg-primary/90 text-primary-foreground font-open-sans font-semibold text-lg px-10 py-4 rounded-lg"
           >
-            Consulta Gratuita
+            Agendar Consulta
           </Button>
           <Button 
             size="lg"
             variant="outline"
             onClick={() => document.getElementById('nosotros')?.scrollIntoView({ behavior: 'smooth' })}
-            className="border-white text-white hover:bg-white hover:text-law-navy font-bodoni text-lg px-8 py-4"
+            className="border-2 border-white text-white hover:bg-white hover:text-corp-navy font-open-sans font-semibold text-lg px-10 py-4 rounded-lg"
           >
             Conocer Más
           </Button>
         </div>
 
         {/* Trust indicators */}
-        <div className="mt-12 grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
+        <div className="mt-16 grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
           <div>
-            <div className="text-3xl font-bodoni font-bold text-primary mb-2">20+</div>
-            <div className="text-white/80">Años de Experiencia</div>
+            <div className="text-4xl font-playfair font-bold text-primary mb-3">15+</div>
+            <div className="text-white/80 font-open-sans">Años de Experiencia</div>
           </div>
           <div>
-            <div className="text-3xl font-bodoni font-bold text-primary mb-2">500+</div>
-            <div className="text-white/80">Casos Exitosos</div>
+            <div className="text-4xl font-playfair font-bold text-primary mb-3">300+</div>
+            <div className="text-white/80 font-open-sans">Casos Exitosos</div>
           </div>
           <div>
-            <div className="text-3xl font-bodoni font-bold text-primary mb-2">24/7</div>
-            <div className="text-white/80">Atención Disponible</div>
+            <div className="text-4xl font-playfair font-bold text-primary mb-3">24/7</div>
+            <div className="text-white/80 font-open-sans">Atención Disponible</div>
           </div>
         </div>
       </div>

@@ -3,31 +3,31 @@
 @tailwind utilities;
 
 /* Design system for Bücher Santa Rita Abogados
-Professional, elegant and minimalist law firm design
+Corporate, elegant and minimalist law firm design
 All colors MUST be HSL.
 */
 
 @layer base {
   :root {
     --background: 0 0% 100%;
-    --foreground: 220 15% 25%;
+    --foreground: 227 66% 19%;
 
     --card: 0 0% 100%;
-    --card-foreground: 220 15% 25%;
+    --card-foreground: 227 66% 19%;
 
     --popover: 0 0% 100%;
-    --popover-foreground: 220 15% 25%;
+    --popover-foreground: 227 66% 19%;
 
     /* Gold accent color from logo #f49619 */
     --primary: 32 94% 53%;
     --primary-foreground: 0 0% 100%;
 
-    /* Navy blue from logo */
-    --secondary: 220 30% 18%;
+    /* Navy blue from logo #0C1D56 */
+    --secondary: 227 66% 19%;
     --secondary-foreground: 0 0% 100%;
 
-    --muted: 220 10% 96%;
-    --muted-foreground: 220 15% 45%;
+    --muted: 0 0% 96%;
+    --muted-foreground: 0 0% 45%;
 
     --accent: 32 94% 53%;
     --accent-foreground: 0 0% 100%;
@@ -35,18 +35,17 @@ All colors MUST be HSL.
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 0 0% 100%;
 
-    --border: 220 10% 90%;
-    --input: 220 10% 95%;
+    --border: 0 0% 90%;
+    --input: 0 0% 95%;
     --ring: 32 94% 53%;
 
-    --radius: 0.25rem;
+    --radius: 0.5rem;
 
-    /* Custom law firm colors */
-    --law-navy: 220 30% 18%;
-    --law-gold: 32 94% 53%;
-    --law-gold-light: 32 94% 90%;
-    --law-gray: 220 5% 65%;
-    --law-gray-light: 220 10% 96%;
+    /* Corporate law firm colors */
+    --corp-navy: 227 66% 19%;
+    --corp-gold: 32 94% 53%;
+    --corp-white: 0 0% 100%;
+    --corp-gray: 0 0% 78%;
 
     --sidebar-background: 0 0% 98%;
 
@@ -65,41 +64,40 @@ All colors MUST be HSL.
     --sidebar-ring: 217.2 91.2% 59.8%;
   }
 
-  /* Professional dark theme (optional) */
+  /* Corporate dark theme (optional) */
   .dark {
-    --background: 220 30% 8%;
+    --background: 227 66% 8%;
     --foreground: 0 0% 95%;
 
-    --card: 220 30% 10%;
+    --card: 227 66% 10%;
     --card-foreground: 0 0% 95%;
 
-    --popover: 220 30% 10%;
+    --popover: 227 66% 10%;
     --popover-foreground: 0 0% 95%;
 
     --primary: 32 94% 53%;
-    --primary-foreground: 220 30% 8%;
+    --primary-foreground: 227 66% 8%;
 
-    --secondary: 220 30% 15%;
+    --secondary: 227 66% 15%;
     --secondary-foreground: 0 0% 95%;
 
-    --muted: 220 30% 15%;
-    --muted-foreground: 220 10% 65%;
+    --muted: 227 66% 15%;
+    --muted-foreground: 0 0% 65%;
 
     --accent: 32 94% 53%;
-    --accent-foreground: 220 30% 8%;
+    --accent-foreground: 227 66% 8%;
 
     --destructive: 0 62.8% 50%;
     --destructive-foreground: 0 0% 95%;
 
-    --border: 220 30% 20%;
-    --input: 220 30% 15%;
+    --border: 227 66% 20%;
+    --input: 227 66% 15%;
     --ring: 32 94% 53%;
 
-    --law-navy: 220 30% 15%;
-    --law-gold: 32 94% 53%;
-    --law-gold-light: 32 94% 20%;
-    --law-gray: 220 10% 65%;
-    --law-gray-light: 220 30% 15%;
+    --corp-navy: 227 66% 15%;
+    --corp-gold: 32 94% 53%;
+    --corp-white: 0 0% 95%;
+    --corp-gray: 0 0% 65%;
   }
 }
 
@@ -109,10 +107,10 @@ All colors MUST be HSL.
   }
 
   body {
-    @apply bg-background text-foreground font-bodoni;
+    @apply bg-background text-foreground font-open-sans;
   }
 
   h1, h2, h3, h4, h5, h6 {
-    @apply font-bodoni;
+    @apply font-playfair;
   }
 }

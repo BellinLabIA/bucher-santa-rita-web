@@ -19,7 +19,8 @@ export default {
 		},
 		extend: {
 			fontFamily: {
-				'bodoni': ['Bodoni Moda', 'serif'],
+				'playfair': ['Playfair Display', 'serif'],
+				'open-sans': ['Open Sans', 'sans-serif'],
 			},
 			colors: {
 				border: 'hsl(var(--border))',
@@ -55,11 +56,10 @@ export default {
 					DEFAULT: 'hsl(var(--card))',
 					foreground: 'hsl(var(--card-foreground))'
 				},
-				'law-navy': 'hsl(var(--law-navy))',
-				'law-gold': 'hsl(var(--law-gold))',
-				'law-gold-light': 'hsl(var(--law-gold-light))',
-				'law-gray': 'hsl(var(--law-gray))',
-				'law-gray-light': 'hsl(var(--law-gray-light))'
+				'corp-navy': 'hsl(var(--corp-navy))',
+				'corp-gold': 'hsl(var(--corp-gold))',
+				'corp-white': 'hsl(var(--corp-white))',
+				'corp-gray': 'hsl(var(--corp-gray))'
 			},
 			borderRadius: {
 				lg: 'var(--radius)',
