@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
 import cdmxHero from "@/assets/cdmx-legal-hero.jpg";
-import grisLogo from "@/assets/gris-logo.png";
+
 
 const HeroSection = () => {
   const scrollToContact = () => {
@@ -24,13 +24,14 @@ const HeroSection = () => {
 
       {/* Content */}
       <div className="relative z-10 text-center text-white px-4 max-w-4xl mx-auto">
-        {/* Logo gris en centro del hero */}
+        {/* Logo gris en centro del hero - placeholder temporal */}
         <div className="mb-12 flex justify-center">
-          <img 
-            src={grisLogo} 
-            alt="Bücher Santa Rita Abogados" 
-            className="h-40 w-auto md:h-48 lg:h-56"
-          />
+          <div className="h-40 md:h-48 lg:h-56 bg-white/10 backdrop-blur-sm rounded-lg px-8 flex items-center justify-center">
+            <span className="text-white font-playfair text-2xl md:text-3xl lg:text-4xl font-bold text-center">
+              BÜCHER<br/>SANTA RITA<br/>
+              <span className="text-lg md:text-xl lg:text-2xl font-normal">Abogados</span>
+            </span>
+          </div>
         </div>
 
         <h2 className="text-2xl md:text-4xl lg:text-5xl font-playfair font-normal mb-8 text-white/90">
