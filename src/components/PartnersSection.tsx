@@ -1,3 +1,5 @@
+import karlBucher from "@/assets/karl-bucher.jpg";
+import gilbertoSantaRita from "@/assets/gilberto-santa-rita.jpg";
 
 const PartnersSection = () => {
   return (
@@ -14,11 +16,11 @@ const PartnersSection = () => {
           {/* Karl Bucher */}
           <div className="flex flex-col lg:flex-row items-center gap-12 bg-white/5 backdrop-blur-sm rounded-2xl p-8 lg:p-12">
             <div className="lg:w-1/3">
-              <div className="w-64 h-64 bg-white/10 rounded-xl mx-auto shadow-2xl flex items-center justify-center">
-                <span className="text-white font-playfair text-lg font-bold text-center">
-                  Foto<br/>Karl Bucher
-                </span>
-              </div>
+              <img 
+                src={karlBucher}
+                alt="Karl Bucher"
+                className="w-64 h-64 object-cover rounded-xl mx-auto shadow-2xl"
+              />
             </div>
             <div className="lg:w-2/3 text-center lg:text-left">
               <h3 className="text-3xl font-playfair font-bold text-white mb-4">
@@ -37,11 +39,11 @@ const PartnersSection = () => {
           {/* Gilberto Santa Rita Tamés */}
           <div className="flex flex-col lg:flex-row-reverse items-center gap-12 bg-white/5 backdrop-blur-sm rounded-2xl p-8 lg:p-12">
             <div className="lg:w-1/3">
-              <div className="w-64 h-64 bg-white/10 rounded-xl mx-auto shadow-2xl flex items-center justify-center">
-                <span className="text-white font-playfair text-lg font-bold text-center">
-                  Foto<br/>Gilberto Santa Rita
-                </span>
-              </div>
+              <img 
+                src={gilbertoSantaRita}
+                alt="Gilberto Santa Rita Tamés"
+                className="w-64 h-64 object-cover rounded-xl mx-auto shadow-2xl"
+              />
             </div>
             <div className="lg:w-2/3 text-center lg:text-left">
               <h3 className="text-3xl font-playfair font-bold text-white mb-4">
