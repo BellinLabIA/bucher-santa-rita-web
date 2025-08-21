@@ -119,7 +119,7 @@ const Header = () => {
                 onClick={() => scrollToSection('contacto')}
                 className="bg-primary hover:bg-primary/90 text-primary-foreground font-open-sans font-semibold w-fit"
               >
-                Agendar Consulta 2222
+                Agendar Consult2222
               </Button>
             </nav>
           </div>
