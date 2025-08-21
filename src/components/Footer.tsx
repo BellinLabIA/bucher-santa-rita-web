@@ -7,7 +7,7 @@ import {
   Scale,
   MessageCircle
 } from "lucide-react";
-// import grisLogo from "@/assets/gris-logo.png";
+import logoGris from "@/assets/gris-logo.png";
 
 const Footer = () => {
   const openWhatsApp = () => {
@@ -30,14 +30,13 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
           {/* Logo and Description */}
           <div className="lg:col-span-1">
-            {/* Logo placeholder - will be replaced with gray logo */}
+            {/* Logo gris en footer */}
             <div className="mb-8">
-              <div className="h-20 bg-white/10 backdrop-blur-sm rounded px-6 flex items-center justify-center w-fit">
-                <span className="text-white font-playfair text-lg font-bold">
-                  BÜCHER SANTA RITA<br/>
-                  <span className="text-sm font-normal">Abogados</span>
-                </span>
-              </div>
+              <img 
+                src={logoGris} 
+                alt="Bücher Santa Rita Abogados" 
+                className="h-20 w-auto object-contain"
+              />
             </div>
             <p className="text-white/80 mb-6 leading-relaxed font-open-sans">
               Despacho penalista de excelencia con más de 15 años de experiencia, 
