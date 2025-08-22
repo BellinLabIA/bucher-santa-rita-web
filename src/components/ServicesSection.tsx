@@ -104,7 +104,7 @@ const ServicesSection = () => {
           </h3>
           <p className="text-lg mb-8 text-white/90 max-w-2xl mx-auto">
             No espere más. Nuestro equipo de expertos está listo para brindarle 
-            la mejor defensa legal. Contáctenos para una consulta gratuita.
+            la mejor defensa legal. Contáctenos para una consulta.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button 
