@@ -29,7 +29,7 @@ const HeroSection = () => {
         <div className="mb-12 flex justify-center">
           <div className="h-40 md:h-48 lg:h-56 bg-white/10 backdrop-blur-sm rounded-lg px-8 flex items-center justify-center">
             <img 
-              src={logoGris} 
+              src="/bsr-logo-gris.png 
               alt="Bücher Santa Rita Abogados" 
               className="h-24 md:h-28 lg:h-32 w-auto object-contain"
             />
