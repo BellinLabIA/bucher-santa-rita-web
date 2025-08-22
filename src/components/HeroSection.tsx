@@ -52,7 +52,7 @@ const HeroSection = () => {
             size="lg"
             variant="outline"
             onClick={() => document.getElementById('nosotros')?.scrollIntoView({ behavior: 'smooth' })}
-            className="border-2 border-white text-white hover:bg-white hover:text-corp-navy font-open-sans font-semibold text-lg px-10 py-4 rounded-lg"
+            className="border-2 border-white text-primary-foreground hover:bg-white hover:text-corp-navy font-open-sans font-semibold text-lg px-10 py-4 rounded-lg"
           >
             Conocer Más
           </Button>
