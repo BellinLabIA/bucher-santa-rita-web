@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
 import cdmxHero from "@/assets/cdmx-legal-hero.jpg";
-import logoGris from "@/assets/bsr-logo-gris.png";
+import logoGris from "@/assets/gris-logo.png";
 
 
 const HeroSection = () => {
@@ -15,11 +15,11 @@ const HeroSection = () => {
     <section id="inicio" className="relative min-h-screen flex items-center justify-center overflow-hidden">
       {/* Background Image */}
       <div className="absolute inset-0 z-0">
-        <img
-  src="/bsr-logo-gris.png"
-  alt="Bücher Santa Rita Abogados"
-  className="h-24 md:h-28 lg:h-32 w-auto object-contain"
-/>
+        <img 
+          src={cdmxHero}
+          alt="Ciudad de México skyline"
+          className="w-full h-full object-cover"
+        />
         <div className="absolute inset-0 bg-black/40"></div>
       </div>
 
@@ -29,7 +29,7 @@ const HeroSection = () => {
         <div className="mb-12 flex justify-center">
           <div className="h-40 md:h-48 lg:h-56 bg-white/10 backdrop-blur-sm rounded-lg px-8 flex items-center justify-center">
             <img 
-              src="/bsr-logo-gris.png" 
+              src={logoGris} 
               alt="Bücher Santa Rita Abogados" 
               className="h-24 md:h-28 lg:h-32 w-auto object-contain"
             />
