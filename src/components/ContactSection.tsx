@@ -120,9 +120,9 @@ const ContactSection = () => {
               </CardHeader>
               <CardContent>
                 <p className="text-law-gray">
-                  Av. Reforma 250, Piso 15<br/>
-                  Col. Juárez, Ciudad de México<br/>
-                  C.P. 06600, CDMX
+                  Paseo de los Tamarindos 400-B<br/>
+                  Col. Bosques de las Lomas, Ciudad de México<br/>
+                  C.P. 05120, CDMX
                 </p>
               </CardContent>
             </Card>
