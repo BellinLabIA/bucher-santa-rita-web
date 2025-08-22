@@ -33,7 +33,7 @@ const Footer = () => {
             {/* Logo gris en footer */}
             <div className="mb-8">
               <img 
-                src={logoGris} 
+                src="/bsr-logo-gris.png" 
                 alt="Bücher Santa Rita Abogados" 
                 className="h-20 w-auto object-contain"
               />
