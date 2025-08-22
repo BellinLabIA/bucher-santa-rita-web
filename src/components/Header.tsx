@@ -22,7 +22,7 @@ const Header = () => {
           {/* Logo azul en header */}
           <div className="h-12 flex items-center">
             <img 
-              src={logoAzul} 
+              src="/bsr-logo-azul.png" 
               alt="Bücher Santa Rita Abogados" 
               className="h-12 w-auto object-contain"
             />
