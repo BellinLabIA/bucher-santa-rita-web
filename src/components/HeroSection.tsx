@@ -27,7 +27,7 @@ const HeroSection = () => {
       <div className="relative z-10 text-center text-white px-4 max-w-4xl mx-auto">
         {/* Logo gris en centro del hero */}
         <div className="mb-12 flex justify-center">
-          <div className="h-40 md:h-48 lg:h-56 bg-white/10 backdrop-blur-sm rounded-lg px-8 flex items-center justify-center">
+          <div className="h-40 md:h-48 lg:h-56 bg-white/20 backdrop-blur-sm rounded-lg px-8 flex items-center justify-center">
             <img 
               src="/bsr-logo-azul.png" 
               alt="Bücher Santa Rita Abogados" 
