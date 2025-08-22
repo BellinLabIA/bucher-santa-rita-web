@@ -73,7 +73,7 @@ const ContactSection = () => {
             <span className="text-primary">Contacto</span>
           </h2>
           <p className="text-lg text-law-gray leading-relaxed">
-            Estamos aquí para ayudarle. Contáctenos para una consulta gratuita 
+            Estamos aquí para ayudarle. Contáctenos para una consulta 
             y descubra cómo podemos proteger sus derechos.
           </p>
         </div>
