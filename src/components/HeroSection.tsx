@@ -15,11 +15,11 @@ const HeroSection = () => {
     <section id="inicio" className="relative min-h-screen flex items-center justify-center overflow-hidden">
       {/* Background Image */}
       <div className="absolute inset-0 z-0">
-        <img 
-          src={cdmxHero}
-          alt="Ciudad de México skyline"
-          className="w-full h-full object-cover"
-        />
+        <img
+  src="/bsr-logo-gris.png"
+  alt="Bücher Santa Rita Abogados"
+  className="h-24 md:h-28 lg:h-32 w-auto object-contain"
+/>
         <div className="absolute inset-0 bg-black/40"></div>
       </div>
 
