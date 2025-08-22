@@ -7,7 +7,7 @@ import {
   Scale,
   MessageCircle
 } from "lucide-react";
-import logoGris from "@/assets/bsr-logo-gris";
+import logoGris from "@/assets/gris-logo.png";
 
 const Footer = () => {
   const openWhatsApp = () => {
