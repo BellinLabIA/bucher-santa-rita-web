@@ -43,6 +43,7 @@ const HeroSection = () => {
         <div className="flex flex-col sm:flex-row gap-6 justify-center items-center">
           <Button 
             size="lg"
+            variant="outline"
             onClick={scrollToContact}
             className="bg-primary hover:bg-primary/90 text-primary-foreground font-open-sans font-semibold text-lg px-10 py-4 rounded-lg"
           >
