@@ -12,7 +12,7 @@ const HeroSection = () => {
   };
 
   return (
-    <section id="inicio" className="relative min-h-screen flex items-center justify-center overflow-hidden">
+    <section id="inicio" className="relative min-h-screen flex items-center justify-center overflow-hidden pt-24 sm:pt-0">
       {/* Background Image */}
       <div className="absolute inset-0 z-0">
         <img 
@@ -27,7 +27,7 @@ const HeroSection = () => {
       <div className="relative z-10 text-center text-white px-4 max-w-4xl mx-auto">
         {/* Logo gris en centro del hero */}
         <div className="mb-12 flex justify-center">
-          <div className="h-40 md:h-48 lg:h-56 bg-white/20 backdrop-blur-sm rounded-lg px-8 flex items-center justify-center">
+          <div className="h-40 md:h-48 lg:h-56 bg-white/20 backdrop-blur-sm rounded-lg px-8 flex items-center justify-center mt-16 sm:mt-8 md:mt-0">
             <img 
               src="/bsr-logo-gris.png" 
               alt="Bücher Santa Rita Abogados" 
