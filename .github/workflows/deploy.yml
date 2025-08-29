@@ -3,7 +3,7 @@ name: Deploy to GitHub Pages
 on:
   push:
     branches:
-      - main  # 👈 o la rama principal que uses
+      - main 
 
 permissions:
   contents: read
