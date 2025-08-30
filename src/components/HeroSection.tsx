@@ -47,7 +47,7 @@ const HeroSection = () => {
             <Button
               variant="outline"
               size="lg"
-              className="border-white/40 text-white hover:bg-white/10 px-10 py-4 text-lg font-semibold"
+              className="border-white/40 text-accent-foreground hover:bg-accent/90 px-10 py-4 text-lg font-semibold"
               asChild
             >
               <Link to="/socios">Conocer Socios</Link>
