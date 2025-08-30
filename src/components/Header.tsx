@@ -21,7 +21,7 @@ const Header = () => {
         <div className="flex items-center justify-between">
           {/* Logo azul en header */}
           <div className="h-12 flex items-center">
-            <img 
+            <img
               src="/bsr-logo-azul.png"
               alt="Bücher Santa Rita Abogados" 
               className="h-12 w-auto object-contain"
