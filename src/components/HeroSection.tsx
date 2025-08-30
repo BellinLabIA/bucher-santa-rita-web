@@ -41,23 +41,19 @@ const HeroSection = () => {
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
            
             <Button
-              asChild
+            
               size="lg"
-              className="bg-[#f49619] hover:bg-[#e98910] text-white px-10 py-4 text-lg font-semibold"
-            >
+              "bg-accent hover:bg-accent/90 text-accent-foreground px-10 py-4 text-lg font-semibold"
+  >
            
               <a href="#contacto">Agendar Consulta</a>
-            </Button>
-
-            <Button
-              asChild
-              size="lg"
-              className="bg-[#f49619] hover:bg-[#e98910] text-white px-10 py-4 text-lg font-semibold"
-            >
-             
-              <a href={sociosUrl}>Conocer Socios</a>
-            </Button>
-          </div>
+           <Button
+    size="lg"
+    className="bg-accent hover:bg-accent/90 text-accent-foreground px-10 py-4 text-lg font-semibold"
+  >
+    <a href="#socios">Conocer Socios</a>
+  </Button>
+</div>
         </div>
       </div>
     </section>
