@@ -8,25 +8,19 @@ const HeroSection = () => {
 
   return (
     <section
-      id="inicio"
-      className="relative min-h-[85vh] flex items-center justify-center bg-cover bg-center bg-no-repeat"
-     
-      style={{ backgroundImage: `url("${fondo}")` }}
-    >
-      {/* velo/gradiente */}
-      <div className="absolute inset-0 bg-gradient-to-b from-primary/70 via-primary/50 to-primary/70" />
-
+  id="inicio"
+  className="relative min-h-[85vh] flex items-center justify-center bg-cover bg-center bg-no-repeat"
+  style={{ backgroundImage: `url(${fondo})` }}
+>
       <div className="relative z-10 text-center text-white container-padding w-full px-4">
-        <div className="max-w-5xl mx-auto">
-          {/* logo central */}
-          <div className="mb-8 flex justify-center">
-            <img
-              src={logoGris}
-              alt="Bücher Santa Rita Abogados"
-              className="mx-auto h-24 md:h-28 w-auto object-contain"
-            />
-          </div>
-
+    <div className="max-w-5xl mx-auto">
+      <div className="mb-8 flex justify-center">
+        <img
+          src={logoGris}
+          alt="Bücher Santa Rita Abogados"
+          className="mx-auto h-24 md:h-28 w-auto object-contain"
+        />
+      </div>
           <h1 className="text-4xl font-light text-accent mb-12">
             Despacho Penalista de Excelencia
           </h1>
