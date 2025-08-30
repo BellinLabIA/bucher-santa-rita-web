@@ -37,9 +37,10 @@ const HeroSection = () => {
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button
+             <Button
               size="lg"
               className="bg-accent hover:bg-accent/90 text-accent-foreground px-10 py-4 text-lg font-semibold"
+              onClick={scrollToContacto}
             >
               <a href="#contacto">Agendar Consulta</a>
             </Button>
@@ -47,7 +48,7 @@ const HeroSection = () => {
             <Button
               variant="outline"
               size="lg"
-              className="bg-accent hover:bg-accent/90 text-accent-foreground px-10 py-4 text-lg font-semibold"
+              className="border-white/40 text-accent-foreground hover:bg-white/10 px-10 py-4 text-lg font-semibold"
               asChild
             >
               <Link to="/socios">Conocer Socios</Link>
