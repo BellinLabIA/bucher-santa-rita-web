@@ -7,21 +7,20 @@ import {
   Scale,
   MessageCircle
 } from "lucide-react";
-import logoGris from "@/assets/gris-logo.png";
+import logoGris from "@/assets/bsr-logo-gris.png"
 
 const Footer = () => {
   const openWhatsApp = () => {
-    const message = encodeURIComponent("Hola, me interesa obtener información sobre sus servicios legales.");
-    const whatsappUrl = `https://wa.me/525512345678?text=${message}`;
-    window.open(whatsappUrl, '_blank');
-  };
+    const whatsappUrl = "https://wa.me/52XXXXXXXXXX"
+    window.open(whatsappUrl, "_blank")
+ }
 
   const scrollToSection = (sectionId: string) => {
-    const element = document.getElementById(sectionId);
+    const element = document.getElementById(sectionId)
     if (element) {
-      element.scrollIntoView({ behavior: 'smooth' });
+      element.scrollIntoView({ behavior: "smooth" })
     }
-  };
+  }
 
   return (
     <footer className="bg-corp-navy text-white">
