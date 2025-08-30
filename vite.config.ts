@@ -5,7 +5,7 @@ import path from 'path'
 
 export default defineConfig({
   plugins: [react()],
-  base: '/bucher-santa-rita-web/',
+  base: '/bucher-santa-rita-web/', 
   resolve: {
     alias: {
       '@': path.resolve(__dirname, './src'),
