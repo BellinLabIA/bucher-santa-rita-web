@@ -5,50 +5,55 @@ const HeroSection = () => {
   const logoGris = `${import.meta.env.BASE_URL}bsr-logo-gris.png`;
   const fondo = `${import.meta.env.BASE_URL}cdmx-legal-hero.jpg`;
 
-  return (
-   <section
-  id="inicio"
-  className="relative min-h-[85vh] flex items-center justify-center bg-cover bg-center bg-no-repeat"
-  style={{ 
-    backgroundImage: `url(${fondo})`,
-    backgroundPosition: "center 100%" }}
-    >
-      {/* velo/gradiente */}
-      <div className="absolute inset-0 bg-black/30" />
+  const scrollToContacto = () => {
+    const el = document.getElementById("contacto");
+    if (el) el.scrollIntoView({ behavior: "smooth", block: "start" });
+  };
 
+  return (
+    <section
+      id="inicio"
+      className="relative min-h-[85vh] flex items-center justify-center bg-cover bg-no-repeat"
+      style={{
+        backgroundImage: `url(${fondo})`,
+        // ajusta si quieres “bajar” un poco la imagen
+        backgroundPosition: "center 30%",
+      }}
+    >
+      {/* Sin overlay, como pediste */}
       <div className="relative z-10 text-center text-white container-padding w-full px-4">
-    <div className="max-w-5xl mx-auto">
-      <div className="mb-8 flex justify-center">
-        <img
-          src={logoGris}
-          alt="Bücher Santa Rita Abogados"
-          className="mx-auto h-24 md:h-28 w-auto object-contain"
-        />
-      </div>
+        <div className="max-w-5xl mx-auto">
+          <div className="mb-8 flex justify-center">
+            <img
+              src={logoGris}
+              alt="Bücher Santa Rita Abogados"
+              className="mx-auto h-24 md:h-28 w-auto object-contain"
+            />
+          </div>
 
           <h1 className="text-4xl font-light text-accent mb-12">
             Despacho Penalista de Excelencia
           </h1>
-
-          <div className="accent-divider mx-auto bg-accent" />
 
           <p className="text-xl leading-relaxed mb-10 max-w-3xl mx-auto text-white/90 font-light">
             Litigio penal y consultoría jurídica de alto nivel con enfoque estratégico.
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-             <Button
+            {/* IMPORTANTE: nada de href aquí; hacemos scroll programático */}
+            <Button
               size="lg"
               className="bg-accent hover:bg-accent/90 text-accent-foreground px-10 py-4 text-lg font-semibold"
               onClick={scrollToContacto}
             >
-              <a href="#contacto">Agendar Consulta</a>
+              Agendar Consulta
             </Button>
 
+            {/* Navegación del router (HashRouter -> /#/socios) */}
             <Button
               variant="outline"
               size="lg"
-              className="border-white/40 text-accent-foreground hover:bg-white/10 px-10 py-4 text-lg font-semibold"
+              className="border-white/40 text-white hover:bg-white/10 px-10 py-4 text-lg font-semibold"
               asChild
             >
               <Link to="/socios">Conocer Socios</Link>
