@@ -5,7 +5,7 @@ const HeroSection = () => {
   
   const logoGris = `${import.meta.env.BASE_URL}bsr-logo-gris.png`;
 
-  
+  const fondo = `${import.meta.env.BASE_URL}cdmx-paseo-reforma.jpg`;
 
   return (
     <section
