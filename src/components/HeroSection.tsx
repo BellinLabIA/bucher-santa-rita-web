@@ -1,6 +1,5 @@
 import { Button } from "@/components/ui/button";
 import cdmxHero from "@/assets/cdmx-legal-hero.jpg";
-import logoGris from "@/assets/bsr-logo-gris.png";
 
 
 const HeroSection = () => {
