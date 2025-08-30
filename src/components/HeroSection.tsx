@@ -1,9 +1,19 @@
 import { Button } from "@/components/ui/button";
 
 const HeroSection = () => {
-  const base = import.meta.env.BASE_URL;
-  const logoGris = `${base}bsr-logo-gris.png`;
-  const fondo = `${base}cdmx-legal-hero.jpg`;
+ 
+  const logoGris = `${import.meta.env.BASE_URL}bsr-logo-gris.png`;
+  const fondo = `${import.meta.env.BASE_URL}cdmx-legal-hero.jpg`;
+
+  const scrollTo = (id: string) => {
+    const el = document.getElementById(id);
+    if (el) {
+      el.scrollIntoView({ behavior: "smooth", block: "start" });
+    } else {
+    
+      window.location.hash = id;
+    }
+  };
 
   return (
     <section
@@ -11,8 +21,9 @@ const HeroSection = () => {
       className="relative min-h-[85vh] flex items-center justify-center bg-cover bg-center bg-no-repeat"
       style={{ backgroundImage: `url(${fondo})` }}
     >
-      <div className="relative z-10 text-center w-full px-4">
+      <div className="relative z-10 text-center text-white w-full px-4">
         <div className="max-w-5xl mx-auto">
+          {/* Logo */}
           <div className="mb-8 flex justify-center">
             <img
               src={logoGris}
@@ -21,31 +32,32 @@ const HeroSection = () => {
             />
           </div>
 
-          <h1 className="text-4xl font-light text-accent mb-12">
+          {/* Título */}
+          <h1 className="text-4xl md:text-5xl font-light text-accent mb-10">
             Despacho Penalista de Excelencia
           </h1>
 
-          <div className="mx-auto h-[2px] w-24 bg-accent mb-10" />
-
-          <p className="text-xl leading-relaxed mb-10 max-w-3xl mx-auto text-white/90 font-light">
+         
+          <p className="text-lg md:text-xl leading-relaxed mb-10 max-w-3xl mx-auto text-white/90 font-light">
             Litigio penal y consultoría jurídica de alto nivel con enfoque estratégico.
           </p>
 
+         
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button
-              asChild
               size="lg"
-              className="bg-accent text-accent-foreground hover:bg-accent/90 active:bg-accent/80 px-10 py-4 text-lg font-semibold transition-colors"
+              onClick={() => scrollTo("contacto")}
+              className="bg-accent hover:bg-accent/90 text-accent-foreground px-10 py-4 text-lg font-semibold focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-accent/60"
             >
-              <a href="#contacto">Agendar Consulta</a>
+              Agendar Consulta
             </Button>
 
             <Button
-              asChild
               size="lg"
-              className="bg-accent text-accent-foreground hover:bg-accent/90 active:bg-accent/80 px-10 py-4 text-lg font-semibold transition-colors"
+              onClick={() => scrollTo("socios")}
+              className="bg-accent hover:bg-accent/90 text-accent-foreground px-10 py-4 text-lg font-semibold focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-accent/60"
             >
-              <a href="#socios">Conocer Socios</a>
+              Conocer Socios
             </Button>
           </div>
         </div>
