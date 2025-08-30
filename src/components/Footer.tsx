@@ -1,25 +1,20 @@
 import { Separator } from "@/components/ui/separator";
 import { Button } from "@/components/ui/button";
-import { 
-  Phone, 
-  Mail, 
-  MapPin, 
-  Scale,
-  MessageCircle
-} from "lucide-react";
+import { Phone, Mail, MapPin, Scale, MessageCircle } from "lucide-react";
 
 const Footer = () => {
+  
+  const logoGris = `${import.meta.env.BASE_URL}bsr-logo-gris.png`;
+
   const openWhatsApp = () => {
-    const whatsappUrl = "https://wa.me/52XXXXXXXXXX"
-    window.open(whatsappUrl, "_blank")
- }
+    const whatsappUrl = "https://wa.me/52XXXXXXXXXX";
+    window.open(whatsappUrl, "_blank");
+  };
 
   const scrollToSection = (sectionId: string) => {
-    const element = document.getElementById(sectionId)
-    if (element) {
-      element.scrollIntoView({ behavior: "smooth" })
-    }
-  }
+    const element = document.getElementById(sectionId);
+    if (element) element.scrollIntoView({ behavior: "smooth" });
+  };
 
   return (
     <footer className="bg-corp-navy text-white">
@@ -28,19 +23,18 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
           {/* Logo and Description */}
           <div className="lg:col-span-1">
-            {/* Logo gris en footer */}
             <div className="mb-8">
-              <img 
-                src="/bsr-logo-gris.png" 
-                alt="Bücher Santa Rita Abogados" 
+              <img
+                src={logoGris}
+                alt="Bücher Santa Rita Abogados"
                 className="h-20 w-auto object-contain"
               />
             </div>
             <p className="text-white/80 mb-6 leading-relaxed font-open-sans">
-              Despacho penalista de excelencia con más de 15 años de experiencia, 
+              Despacho penalista de excelencia con más de 15 años de experiencia,
               comprometidos con la defensa de sus derechos en la Ciudad de México.
             </p>
-            <Button 
+            <Button
               onClick={openWhatsApp}
               className="bg-green-600 hover:bg-green-700 text-white font-open-sans font-semibold"
             >
@@ -55,46 +49,22 @@ const Footer = () => {
               Enlaces Rápidos
             </h3>
             <ul className="space-y-3">
-              <li>
-                <button 
-                  onClick={() => scrollToSection('inicio')}
-                  className="text-white/80 hover:text-primary transition-colors"
-                >
-                  Inicio
-                </button>
-              </li>
-              <li>
-                <button 
-                  onClick={() => scrollToSection('nosotros')}
-                  className="text-white/80 hover:text-primary transition-colors"
-                >
-                  Nosotros
-                </button>
-              </li>
-              <li>
-                <button 
-                  onClick={() => scrollToSection('servicios')}
-                  className="text-white/80 hover:text-primary transition-colors"
-                >
-                  Servicios
-                </button>
-              </li>
-              <li>
-                <button 
-                  onClick={() => scrollToSection('socios')}
-                  className="text-white/80 hover:text-primary transition-colors"
-                >
-                  Socios
-                </button>
-              </li>
-              <li>
-                <button 
-                  onClick={() => scrollToSection('contacto')}
-                  className="text-white/80 hover:text-primary transition-colors"
-                >
-                  Contacto
-                </button>
-              </li>
+              {[
+                { id: "inicio", label: "Inicio" },
+                { id: "nosotros", label: "Nosotros" },
+                { id: "servicios", label: "Servicios" },
+                { id: "socios", label: "Socios" },
+                { id: "contacto", label: "Contacto" },
+              ].map((item) => (
+                <li key={item.id}>
+                  <button
+                    onClick={() => scrollToSection(item.id)}
+                    className="text-white/80 hover:text-primary transition-colors"
+                  >
+                    {item.label}
+                  </button>
+                </li>
+              ))}
             </ul>
           </div>
 
@@ -122,22 +92,18 @@ const Footer = () => {
               <div className="flex items-start">
                 <MapPin className="h-5 w-5 text-primary mr-3 mt-0.5 flex-shrink-0" />
                 <div className="text-white/80 text-sm">
-                  Av. Reforma 250, Piso 15<br/>
-                  Col. Juárez, CDMX<br/>
+                  Av. Reforma 250, Piso 15<br />
+                  Col. Juárez, CDMX<br />
                   C.P. 06600
                 </div>
               </div>
               <div className="flex items-center">
                 <Phone className="h-5 w-5 text-primary mr-3 flex-shrink-0" />
-                <div className="text-white/80 text-sm">
-                  +52 55 1234-5678
-                </div>
+                <div className="text-white/80 text-sm">+52 55 1234-5678</div>
               </div>
               <div className="flex items-center">
                 <Mail className="h-5 w-5 text-primary mr-3 flex-shrink-0" />
-                <div className="text-white/80 text-sm">
-                  info@buchersantarita.mx
-                </div>
+                <div className="text-white/80 text-sm">info@buchersantarita.mx</div>
               </div>
             </div>
           </div>
@@ -149,28 +115,20 @@ const Footer = () => {
         <div className="flex flex-col md:flex-row justify-between items-center text-sm text-white/60">
           <div className="flex items-center mb-4 md:mb-0">
             <Scale className="h-4 w-4 text-primary mr-2" />
-            <span>
-              © 2024 Bücher Santa Rita Abogados. Todos los derechos reservados.
-            </span>
+            <span>© 2024 Bücher Santa Rita Abogados. Todos los derechos reservados.</span>
           </div>
           <div className="flex flex-col md:flex-row gap-4">
-            <a href="#" className="hover:text-primary transition-colors">
-              Aviso de Privacidad
-            </a>
-            <a href="#" className="hover:text-primary transition-colors">
-              Términos y Condiciones
-            </a>
-            <a href="#" className="hover:text-primary transition-colors">
-              Código de Ética
-            </a>
+            <a href="#" className="hover:text-primary transition-colors">Aviso de Privacidad</a>
+            <a href="#" className="hover:text-primary transition-colors">Términos y Condiciones</a>
+            <a href="#" className="hover:text-primary transition-colors">Código de Ética</a>
           </div>
         </div>
 
         {/* Professional Disclaimer */}
         <div className="mt-8 p-4 bg-white/5 rounded-lg">
           <p className="text-xs text-white/60 text-center leading-relaxed">
-            IMPORTANTE: La información contenida en este sitio web es únicamente para fines informativos 
-            y no constituye asesoría legal específica. Para obtener asesoría legal apropiada para su situación particular, 
+            IMPORTANTE: La información contenida en este sitio web es únicamente para fines informativos
+            y no constituye asesoría legal específica. Para obtener asesoría legal apropiada para su situación particular,
             consulte directamente con nuestros abogados especializados.
           </p>
         </div>
