@@ -4,7 +4,7 @@ import { Phone, Mail, MapPin, Scale, MessageCircle } from "lucide-react";
 
 const Footer = () => {
   
-  const logoAzul = `${import.meta.env.BASE_URL}bsr-logo-azul.png`;
+  const logoGris = `${import.meta.env.BASE_URL}bsr-logo-gris.png`;
 
   const openWhatsApp = () => {
     const whatsappUrl = "https://wa.me/52XXXXXXXXXX";
