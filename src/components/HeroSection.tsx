@@ -11,7 +11,7 @@ const HeroSection = () => {
   className="relative min-h-[85vh] flex items-center justify-center bg-cover bg-center bg-no-repeat"
   style={{ 
     backgroundImage: `url(${fondo})`,
-    backgroundPosition: "center 50%" }}
+    backgroundPosition: "center 100%" }}
     >
       {/* velo/gradiente */}
       <div className="absolute inset-0 bg-black/30" />
