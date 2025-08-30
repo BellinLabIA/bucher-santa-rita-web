@@ -2,16 +2,14 @@ import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 
 const HeroSection = () => {
-  
   const logoGris = `${import.meta.env.BASE_URL}bsr-logo-gris.png`;
-
   const fondo = `${import.meta.env.BASE_URL}cdmx-legal-hero.jpg`;
 
   return (
     <section
       id="inicio"
       className="relative min-h-[85vh] flex items-center justify-center bg-cover bg-center bg-no-repeat"
-      
+      style={{ backgroundImage: `url(${fondo})` }}   {/* 👈 aquí aplicamos el fondo */}
     >
       <div className="absolute inset-0 bg-gradient-to-b from-primary/70 via-primary/50 to-primary/70" />
       <div className="relative z-10 text-center text-white container-padding w-full px-4">
