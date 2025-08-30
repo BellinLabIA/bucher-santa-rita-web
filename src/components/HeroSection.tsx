@@ -1,26 +1,33 @@
 import { Button } from "@/components/ui/button";
-import { Link } from "react-router-dom";
 
 const HeroSection = () => {
- 
-  const logoGris = `${import.meta.env.BASE_URL}bsr-logo-gris.png`;
-  const fondo = `${import.meta.env.BASE_URL}cdmx-legal-hero.jpg`;
+  
+  const base = import.meta.env.BASE_URL;
+  const logoGris = `${base}bsr-logo-gris.png`;
+  const fondo = `${base}cdmx-legal-hero.jpg`;
+  const sociosUrl = `${base}socios`; // ruta a la página de Socios
 
   return (
     <section
-  id="inicio"
-  className="relative min-h-[85vh] flex items-center justify-center bg-cover bg-center bg-no-repeat"
-  style={{ backgroundImage: `url(${fondo})` }}
->
+      id="inicio"
+      className="relative min-h-[85vh] flex items-center justify-center bg-cover bg-no-repeat"
+      style={{
+        backgroundImage: `url(${fondo})`,
+      
+        backgroundPosition: "center 50%",
+      }}
+    >
+      
       <div className="relative z-10 text-center text-white container-padding w-full px-4">
-    <div className="max-w-5xl mx-auto">
-      <div className="mb-8 flex justify-center">
-        <img
-          src={logoGris}
-          alt="Bücher Santa Rita Abogados"
-          className="mx-auto h-24 md:h-28 w-auto object-contain"
-        />
-      </div>
+        <div className="max-w-5xl mx-auto">
+          <div className="mb-8 flex justify-center">
+            <img
+              src={logoGris}
+              alt="Bücher Santa Rita Abogados"
+              className="mx-auto h-24 md:h-28 w-auto object-contain"
+            />
+          </div>
+
           <h1 className="text-4xl font-light text-accent mb-12">
             Despacho Penalista de Excelencia
           </h1>
@@ -32,20 +39,23 @@ const HeroSection = () => {
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
+           
             <Button
+              asChild
               size="lg"
-              className="bg-accent hover:bg-accent/90 text-accent-foreground px-10 py-4 text-lg font-semibold"
+              className="bg-[#f49619] hover:bg-[#e98910] text-white px-10 py-4 text-lg font-semibold"
             >
+           
               <a href="#contacto">Agendar Consulta</a>
             </Button>
 
             <Button
-              variant="outline"
-              size="lg"
-              className="border-white/40 text-white hover:bg-white/10 px-10 py-4 text-lg font-semibold"
               asChild
+              size="lg"
+              className="bg-[#f49619] hover:bg-[#e98910] text-white px-10 py-4 text-lg font-semibold"
             >
-              <Link to="/socios">Conocer Socios</Link>
+             
+              <a href={sociosUrl}>Conocer Socios</a>
             </Button>
           </div>
         </div>
