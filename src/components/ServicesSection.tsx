@@ -15,7 +15,7 @@ const ServicesSection = () => {
       icon: <Gavel className="h-8 w-8 text-primary" />,
       title: "Defensa Penal",
       description: "Representación legal especializada en todos los aspectos del derecho penal, desde delitos menores hasta casos complejos.",
-      features: ["Delitos contra la salud", "Delitos patrimoniales", "Delitos violentos", "Delitos federales"]
+      features: [""]
     },
     {
       icon: <FileCheck className="h-8 w-8 text-primary" />,
