@@ -15,36 +15,37 @@ const ServicesSection = () => {
       icon: <Gavel className="h-8 w-8 text-primary" />,
       title: "Defensa Penal",
       description: "Representación legal especializada en todos los aspectos del derecho penal, desde delitos menores hasta casos complejos.",
-     
+      features: ["Delitos contra la salud", "Delitos patrimoniales", "Delitos violentos", "Delitos federales"]
+    },
     {
       icon: <FileCheck className="h-8 w-8 text-primary" />,
       title: "Asesoría Legal",
       description: "Consultoría preventiva y estratégica para evitar problemas legales y proteger sus intereses.",
-      
+      features: ["Consulta preventiva", "Análisis de riesgo", "Estrategia legal", "Documentación"]
     },
     {
       icon: <UserCheck className="h-8 w-8 text-primary" />,
       title: "Representación en Juicios",
       description: "Defensa integral durante todo el proceso judicial con estrategias personalizadas para cada caso.",
-     
+      features: ["Juicios orales", "Recursos de apelación", "Amparos", "Procedimientos especiales"]
     },
     {
       icon: <AlertTriangle className="h-8 w-8 text-primary" />,
       title: "Atención de Emergencia",
       description: "Servicio disponible 24/7 para situaciones urgentes que requieren atención legal inmediata.",
-      
+      features: ["Atención inmediata", "Disponibilidad 24/7", "Casos urgentes", "Asesoría telefónica"]
     },
     {
       icon: <ShieldCheck className="h-8 w-8 text-primary" />,
       title: "Delitos Empresariales",
       description: "Especialización en delitos económicos y empresariales con enfoque en la protección corporativa.",
-      
+      features: ["Lavado de dinero", "Delitos fiscales", "Fraude empresarial", "Compliance penal"]
     },
     {
       icon: <Users className="h-8 w-8 text-primary" />,
       title: "Mediación y Conciliación",
       description: "Resolución alternativa de conflictos para encontrar soluciones eficaces fuera del litigio.",
-      
+      features: ["Acuerdos reparatorios", "Mediación penal", "Justicia restaurativa", "Negociación"]
     }
   ];
 
@@ -126,5 +127,3 @@ const ServicesSection = () => {
     </section>
   );
 };
-
-export default ServicesSection;
