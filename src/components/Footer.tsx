@@ -1,15 +1,8 @@
 import { Separator } from "@/components/ui/separator";
-import { Button } from "@/components/ui/button";
-import { Phone, Mail, MapPin, Scale, MessageCircle } from "lucide-react";
+import { Phone, Mail, MapPin, Scale } from "lucide-react";
 
 const Footer = () => {
-  
   const logoGris = `${import.meta.env.BASE_URL}bsr-logo-gris.png`;
-
-  const openWhatsApp = () => {
-    const whatsappUrl = "https://wa.me/52XXXXXXXXXX";
-    window.open(whatsappUrl, "_blank");
-  };
 
   const scrollToSection = (sectionId: string) => {
     const element = document.getElementById(sectionId);
@@ -34,13 +27,6 @@ const Footer = () => {
               Despacho penalista de excelencia con más de 15 años de experiencia,
               comprometidos con la defensa de sus derechos en la Ciudad de México.
             </p>
-            <Button
-              onClick={openWhatsApp}
-              className="bg-green-600 hover:bg-green-700 text-white font-open-sans font-semibold"
-            >
-              <MessageCircle className="h-4 w-4 mr-2" />
-              WhatsApp
-            </Button>
           </div>
 
           {/* Quick Links */}
