@@ -10,11 +10,11 @@ const AboutSection = () => {
           <div className="w-24 h-1 bg-primary mx-auto mb-12"></div>
           
           <p className="text-lg md:text-xl leading-relaxed text-muted-foreground font-open-sans max-w-3xl mx-auto">
-            Karl Bücher y Gilberto Santa Rita forman una alianza estratégica, comparten la misma visión analítica y detallada de los asuntos, sobre la cual desarrollan acciones concretas y definidas. Complementan su metodología de trabajo con una visión teórica dogmática y la práctica procesal y argumentativa.
-
-El análisis y tratamiento actual de los delitos es específico y meticuloso, ciertos detalles impactan profundamente en las consecuencias y efectos de los casos expuestos ante las autoridades. Son conscientes de la importancia del análisis detallado de los asuntos, evitando acciones apresuradas o recomendaciones superfluas.
-
-Ambos litigaron bajo el anterior sistema de procesamiento penal, y buscan un nuevo enfoque para la atención de los asuntos y la Justicia en México. 
+            Karl Bücher y Gilberto Santa Rita forman una alianza estratégica, comparten la misma visión analítica y detallada de los asuntos, sobre la cual desarrollan acciones concretas y definidas. 
+            Complementan su metodología de trabajo con una visión teórica dogmática y la práctica procesal y argumentativa.
+            El análisis y tratamiento actual de los delitos es específico y meticuloso, ciertos detalles impactan profundamente en las consecuencias y efectos de los casos expuestos ante las autoridades. 
+            Son conscientes de la importancia del análisis detallado de los asuntos, evitando acciones apresuradas o recomendaciones superfluas.
+            Ambos litigaron bajo el anterior sistema de procesamiento penal, y buscan un nuevo enfoque para la atención de los asuntos y la Justicia en México. 
 
           </p>
           
