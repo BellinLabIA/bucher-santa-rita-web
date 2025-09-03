@@ -12,7 +12,7 @@ const HeroSection = () => {
         <div className="max-w-5xl mx-auto">
           {/* Logo con fondo azul rectangular */}
           <div className="mb-12 flex justify-center">
-            <div className="bg-[#232c57] w-64 h-[62] flex items-center justify-center p-6">
+            <div className="bg-[#232c57] w-72 h-[62] flex items-center justify-center p-6">
               <img
                 src={logoGris}
                 alt="Bücher Santa Rita Abogados"
