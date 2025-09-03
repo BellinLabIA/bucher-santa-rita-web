@@ -107,18 +107,7 @@ const ServicesSection = () => {
             la mejor defensa legal. Contáctenos para una consulta.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button 
-              size="lg"
-              onClick={scrollToContact}
-              className="bg-primary hover:bg-primary/90 text-primary-foreground font-bodoni text-lg px-8"
-            >
-              Consulta Gratuita
-            </Button>
-            <Button 
-              size="lg"
-              variant="outline"
-              className="border-white text-white hover:bg-white hover:text-law-navy font-bodoni text-lg px-8"
-            >
+          
               Ver Casos de Éxito
             </Button>
           </div>
