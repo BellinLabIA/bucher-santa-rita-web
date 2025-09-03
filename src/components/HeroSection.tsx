@@ -28,7 +28,7 @@ const HeroSection = () => {
             <img
               src={logoGris}
               alt="Bücher Santa Rita Abogados"
-              className="mx-auto h-24 md:h-28 w-auto object-contain"
+              className="mx-auto h-24 md:h-50 w-auto object-contain"
             />
           </div>
 
