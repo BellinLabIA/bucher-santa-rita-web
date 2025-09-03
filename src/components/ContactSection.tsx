@@ -1,11 +1,12 @@
+// src/components/ui/ContactSection.tsx  (ajusta la ruta real de tu proyecto)
+import { useState } from "react";
+
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Label } from "@/components/ui/label";
 import { Phone, Mail, MapPin, Send } from "lucide-react";
-import { useState } from "react";
-import { useToast } from "@/hooks/use-toast";
 
 const ContactSection = () => {
   const [formData, setFormData] = useState({
@@ -14,7 +15,6 @@ const ContactSection = () => {
     telefono: "",
     mensaje: "",
   });
-  const { toast } = useToast();
 
   const handleInputChange = (
     e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
@@ -29,23 +29,15 @@ const ContactSection = () => {
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
 
-    // Validación básica
     if (!formData.nombre || !formData.email || !formData.mensaje) {
-      toast({
-        title: "Error",
-        description: "Por favor complete todos los campos requeridos.",
-        variant: "destructive",
-      });
+      // Evitamos useToast para no depender de nada externo
+      alert("Por favor complete todos los campos requeridos.");
       return;
     }
 
-    // Aquí normalmente enviarías los datos al backend
-    toast({
-      title: "Mensaje Enviado",
-      description: "Gracias por contactarnos. Le responderemos a la brevedad.",
-    });
+    // Aquí normalmente enviarías la info a tu backend
+    alert("Mensaje enviado. Gracias por contactarnos.");
 
-    // Limpiar formulario
     setFormData({
       nombre: "",
       email: "",
@@ -68,7 +60,7 @@ const ContactSection = () => {
         </div>
 
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
-          {/* Columna izquierda: Información de contacto */}
+          {/* Columna izquierda: información */}
           <div className="lg:col-span-1 space-y-6">
             <Card className="border-law-gold/20">
               <CardHeader>
@@ -79,13 +71,7 @@ const ContactSection = () => {
               </CardHeader>
               <CardContent>
                 <p className="text-law-gray mb-2">Oficina Principal:</p>
-                <p className="font-semibold text-law-navy">
-                  +52 55 1234-5678
-                </p>
-                <p className="text-law-gray mb-2 mt-4">Emergencias 24/7:</p>
-                <p className="font-semibold text-law-navy">
-                  +52 55 8765-4321
-                </p>
+                <p className="font-semibold text-law-navy">+52 55 1234-5678</p>
               </CardContent>
             </Card>
 
@@ -100,10 +86,6 @@ const ContactSection = () => {
                 <p className="text-law-gray mb-2">Consultas Generales:</p>
                 <p className="font-semibold text-law-navy">
                   info@buchersantarita.mx
-                </p>
-                <p className="text-law-gray mb-2 mt-4">Casos Urgentes:</p>
-                <p className="font-semibold text-law-navy">
-                  urgente@buchersantarita.mx
                 </p>
               </CardContent>
             </Card>
@@ -125,12 +107,9 @@ const ContactSection = () => {
                 </p>
               </CardContent>
             </Card>
-
-            {/* Eliminado: Card de Horarios */}
-            {/* Eliminado: Botón WhatsApp */}
           </div>
 
-          {/* Columna derecha: Formulario */}
+          {/* Columna derecha: formulario */}
           <div className="lg:col-span-2">
             <Card className="border-law-gold/20">
               <CardHeader>
@@ -217,15 +196,14 @@ const ContactSection = () => {
                   </div>
 
                   <p className="text-sm text-law-gray text-center">
-                    * Campos requeridos. Sus datos serán tratados con total confidencialidad.
+                    * Campos requeridos. Sus datos serán tratados con total
+                    confidencialidad.
                   </p>
                 </form>
               </CardContent>
             </Card>
           </div>
         </div>
-
-        {/* Eliminado: Bloque de Atención Inmediata (Línea de emergencia / WhatsApp 24/7) */}
       </div>
     </section>
   );
