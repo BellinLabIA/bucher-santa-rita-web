@@ -114,7 +114,7 @@ const ContactSection = () => {
             <Card className="border-law-gold/20">
               <CardHeader>
                 <CardTitle className="text-2xl font-bodoni text-law-navy text-center">
-                  Solicitar <span className="text-primary">Consulta Gratuita</span>
+                  Solicitar <span className="text-primary">Consulta</span>
                 </CardTitle>
               </CardHeader>
               <CardContent>
