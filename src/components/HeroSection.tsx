@@ -1,19 +1,6 @@
-import { Button } from "@/components/ui/button";
-
 const HeroSection = () => {
- 
   const logoGris = `${import.meta.env.BASE_URL}bsr-logo-gris.png`;
   const fondo = `${import.meta.env.BASE_URL}cdmx-legal-hero.jpg`;
-
-  const scrollTo = (id: string) => {
-    const el = document.getElementById(id);
-    if (el) {
-      el.scrollIntoView({ behavior: "smooth", block: "start" });
-    } else {
-    
-      window.location.hash = id;
-    }
-  };
 
   return (
     <section
@@ -23,43 +10,26 @@ const HeroSection = () => {
     >
       <div className="relative z-10 text-center text-white w-full px-4">
         <div className="max-w-5xl mx-auto">
-          {/* Logo */}
-          <div className="mb-8 flex justify-center">
-            <img
-              src={logoGris}
-              alt="Bücher Santa Rita Abogados"
-              className="mx-auto h-44 md:h-28 w-auto object-contain"
-            />
+          {/* Logo con fondo azul */}
+          <div className="mb-12 flex justify-center">
+            <div className="bg-[#232c57] p-6 rounded-lg inline-flex">
+              <img
+                src={logoGris}
+                alt="Bücher Santa Rita Abogados"
+                className="mx-auto h-32 md:h-40 w-auto object-contain"
+              />
+            </div>
           </div>
 
           {/* Título */}
-          <h1 className="text-4xl md:text-5xl font-light text-accent mb-10">
+          <h1 className="text-4xl md:text-5xl font-light text-accent mb-8">
             Despacho Penalista de Excelencia
           </h1>
 
-         
-          <p className="text-lg md:text-xl leading-relaxed mb-10 max-w-3xl mx-auto text-white/90 font-light">
+          {/* Subtítulo */}
+          <p className="text-lg md:text-xl leading-relaxed max-w-3xl mx-auto text-white/90 font-light">
             Litigio penal y consultoría jurídica de alto nivel con enfoque estratégico.
           </p>
-
-         
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button
-              size="lg"
-              onClick={() => scrollTo("contacto")}
-              className="bg-accent hover:bg-accent/90 text-accent-foreground px-10 py-4 text-lg font-semibold focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-accent/60"
-            >
-              Agendar Consulta
-            </Button>
-
-            <Button
-              size="lg"
-              onClick={() => scrollTo("socios")}
-              className="bg-accent hover:bg-accent/90 text-accent-foreground px-10 py-4 text-lg font-semibold focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-accent/60"
-            >
-              Conocer Socios
-            </Button>
-          </div>
         </div>
       </div>
     </section>
