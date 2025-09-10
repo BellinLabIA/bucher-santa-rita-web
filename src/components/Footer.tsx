@@ -76,7 +76,7 @@ const Footer = () => {
                 <MapPin className="h-5 w-5 text-primary mr-3 mt-0.5 flex-shrink-0" />
                 <div className="text-white/80 text-sm">
                   Paseo de los Tamarindos 400-B Piso 6<br />
-                  Col. Bosques de las Lomas, Ciudad de México />
+                  Col. Bosques de las Lomas, Ciudad de México<br />
                   C.P. 05120, CDMX
                 </div>
               </div>
