@@ -1,4 +1,4 @@
-// src/components/ui/ContactSection.tsx  (ajusta la ruta real de tu proyecto)
+// src/components/ui/ContactSection.tsx
 import { useState } from "react";
 
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
@@ -30,20 +30,21 @@ const ContactSection = () => {
     e.preventDefault();
 
     if (!formData.nombre || !formData.email || !formData.mensaje) {
-      // Evitamos useToast para no depender de nada externo
       alert("Por favor complete todos los campos requeridos.");
       return;
     }
 
-    // Aquí normalmente enviarías la info a tu backend
-    alert("Mensaje enviado. Gracias por contactarnos.");
+    const mailtoLink = `mailto:gs@bsrabogados.net?subject=Consulta%20desde%20el%20sitio%20web&body=Nombre:%20${encodeURIComponent(
+      formData.nombre
+    )}%0ACorreo:%20${encodeURIComponent(
+      formData.email
+    )}%0ATeléfono:%20${encodeURIComponent(
+      formData.telefono
+    )}%0AMensaje:%20${encodeURIComponent(formData.mensaje)}`;
 
-    setFormData({
-      nombre: "",
-      email: "",
-      telefono: "",
-      mensaje: "",
-    });
+    window.location.href = mailtoLink;
+
+    setFormData({ nombre: "", email: "", telefono: "", mensaje: "" });
   };
 
   return (
@@ -99,7 +100,7 @@ const ContactSection = () => {
               </CardHeader>
               <CardContent>
                 <p className="text-law-gray">
-                  Paseo de los Tamarindos 400-B
+                  Paseo de los Tamarindos 400-B Piso 6
                   <br />
                   Col. Bosques de las Lomas, Ciudad de México
                   <br />
@@ -121,10 +122,7 @@ const ContactSection = () => {
                 <form onSubmit={handleSubmit} className="space-y-6">
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                     <div>
-                      <Label
-                        htmlFor="nombre"
-                        className="text-law-navy font-bodoni"
-                      >
+                      <Label htmlFor="nombre" className="text-law-navy font-bodoni">
                         Nombre Completo *
                       </Label>
                       <Input
@@ -137,10 +135,7 @@ const ContactSection = () => {
                       />
                     </div>
                     <div>
-                      <Label
-                        htmlFor="telefono"
-                        className="text-law-navy font-bodoni"
-                      >
+                      <Label htmlFor="telefono" className="text-law-navy font-bodoni">
                         Teléfono
                       </Label>
                       <Input
