@@ -186,7 +186,7 @@ const ContactSection = () => {
                       className="bg-primary hover:bg-primary/90 text-primary-foreground font-bodoni text-lg px-8"
                     >
                       <Send className="h-5 w-5 mr-2" />
-                      Enviar Consulta
+                      Enviar Correo
                     </Button>
                   </div>
 
