@@ -14,19 +14,19 @@ const PartnersSection = () => {
 
         <div className="max-w-6xl mx-auto space-y-16">
           {/* Karl Bucher */}
-          <div className="flex flex-col lg:flex-row items-center gap-12 bg-white/5 backdrop-blur-sm rounded-2xl p-8 lg:p-12">
+          <div className="flex flex-col lg:flex-row items-start gap-12 bg-white/5 backdrop-blur-sm rounded-2xl p-8 lg:p-12">
             <div className="lg:w-1/3">
               <img 
                 src={karlBucher}
                 alt="Karl Bucher"
-                className="w-64 h-64 object-cover rounded-xl mx-auto shadow-2xl"
+                className="w-64 h-64 object-cover rounded-xl shadow-2xl mx-0"
               />
             </div>
-            <div className="lg:w-2/3 text-center lg:text-left">
+            <div className="lg:w-2/3 text-justify">
               <h3 className="text-3xl font-playfair font-bold text-white mb-4">
                 Karl Bucher
               </h3>
-              <div className="w-16 h-1 bg-primary mb-6 mx-auto lg:mx-0"></div>
+              <div className="w-16 h-1 bg-primary mb-6"></div>
               <div className="space-y-4 text-white/90 font-open-sans text-lg leading-relaxed">
                 <p>
                   Se desempeña en la práctica libre del ejercicio profesional como abogado ligante en materia penal, especializado en estrategias procesales y argumentativas, principalmente dedicado a la atención de asuntos relacionados con aspectos patrimoniales, fiscales y financieros.
@@ -53,19 +53,19 @@ const PartnersSection = () => {
           </div>
 
           {/* Gilberto Santa Rita Tamés */}
-          <div className="flex flex-col lg:flex-row-reverse items-center gap-12 bg-white/5 backdrop-blur-sm rounded-2xl p-8 lg:p-12">
+          <div className="flex flex-col lg:flex-row-reverse items-start gap-12 bg-white/5 backdrop-blur-sm rounded-2xl p-8 lg:p-12">
             <div className="lg:w-1/3">
               <img 
                 src={gilbertoSantaRita}
                 alt="Gilberto Santa Rita Tamés"
-                className="w-64 h-64 object-cover rounded-xl mx-auto shadow-2xl"
+                className="w-64 h-64 object-cover rounded-xl shadow-2xl mx-0"
               />
             </div>
-            <div className="lg:w-2/3 text-center lg:text-left">
+            <div className="lg:w-2/3 text-justify">
               <h3 className="text-3xl font-playfair font-bold text-white mb-4">
                 Gilberto Santa Rita Tamés
               </h3>
-              <div className="w-16 h-1 bg-primary mb-6 mx-auto lg:mx-0"></div>
+              <div className="w-16 h-1 bg-primary mb-6"></div>
               <div className="space-y-4 text-white/90 font-open-sans text-lg leading-relaxed">
                 <p>
                   Abogado especialista en dogmática penal, lo que le permite desarrollar un análisis detallado y con un enfoque diferenciado en los casos, consultas y opiniones legales que realiza.
@@ -101,3 +101,4 @@ const PartnersSection = () => {
 };
 
 export default PartnersSection;
+
