@@ -7,7 +7,7 @@ const PartnersSection = () => {
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-playfair font-bold text-white mb-8">
-            Socios Fundadores
+            Socios
           </h2>
           <div className="w-24 h-1 bg-primary mx-auto"></div>
         </div>
@@ -77,7 +77,7 @@ const PartnersSection = () => {
                   Ha fungido como asesor de diversas instancias del gobierno a lo largo de los años, y también ha participado como profesor invitado en el INACIPE. Ha sido entrevistado por diversos medios de comunicación y es asesor de la A.C. SIN TRATA.
                 </p>
                 <p>
-                  Ha tenido una intensa labor desde la academia durante más de 10 años, formando parte del Sistema Nacional de Investigadores (SIN-NIVEL 1), recibiendo diferentes premios y galardones a nivel nacional e internacional. Asimismo, traduce textos jurídicos en alemán e inglés.
+                  Ha tenido una intensa labor desde la academia durante más de 10 años, formando parte del Sistema Nacional de Investigadores (SNI-NIVEL 1), recibiendo diferentes premios y galardones a nivel nacional e internacional. Asimismo, traduce textos jurídicos en alemán e inglés.
                 </p>
                 <ul className="list-disc list-inside space-y-2">
                   <li>Doctorado cum laude en Derecho penal y procesal, por la Universidad de Sevilla.</li>
