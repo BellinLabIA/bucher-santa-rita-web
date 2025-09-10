@@ -71,7 +71,7 @@ const ContactSection = () => {
               </CardHeader>
               <CardContent>
                 <p className="text-law-gray mb-2">Oficina Principal:</p>
-                <p className="font-semibold text-law-navy">+52 55 1234-5678</p>
+                <p className="font-semibold text-law-navy">+52 55 6820-5547</p>
               </CardContent>
             </Card>
 
@@ -85,7 +85,7 @@ const ContactSection = () => {
               <CardContent>
                 <p className="text-law-gray mb-2">Consultas Generales:</p>
                 <p className="font-semibold text-law-navy">
-                  info@buchersantarita.mx
+                  gs@bsrabogados.net
                 </p>
               </CardContent>
             </Card>
