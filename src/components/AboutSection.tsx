@@ -3,21 +3,33 @@ const AboutSection = () => {
     <section id="nosotros" className="py-20 bg-background">
       <div className="container mx-auto px-4">
         <div className="max-w-4xl mx-auto text-center">
-          <h2 className="text-4xl md:text-5xl font-playfair font-bold text-foreground mb-8">
-            
+          {/* Título agregado */}
+          <h2 className="text-3xl md:text-4xl font-playfair font-bold text-primary mb-4">
+            Abogados Penalistas
           </h2>
-          
-          <div className="w-24 h-1 bg-primary mx-auto mb-12"></div>
-          
-          <p className="text-lg md:text-xl leading-relaxed text-muted-foreground font-open-sans max-w-3xl mx-auto">
-            Karl Bücher y Gilberto Santa Rita forman una alianza estratégica, comparten la misma visión analítica y detallada de los asuntos, sobre la cual desarrollan acciones concretas y definidas. 
-            Complementan su metodología de trabajo con una visión teórica dogmática y la práctica procesal y argumentativa.
-            El análisis y tratamiento actual de los delitos es específico y meticuloso, ciertos detalles impactan profundamente en las consecuencias y efectos de los casos expuestos ante las autoridades. 
-            Son conscientes de la importancia del análisis detallado de los asuntos, evitando acciones apresuradas o recomendaciones superfluas.
-            Ambos litigaron bajo el anterior sistema de procesamiento penal, y buscan un nuevo enfoque para la atención de los asuntos y la Justicia en México. 
 
-          </p>
-          
+          <div className="w-24 h-1 bg-primary mx-auto mb-12"></div>
+
+          {/* Texto justificado y con separación de párrafos */}
+          <div className="text-lg md:text-xl leading-relaxed text-muted-foreground font-open-sans max-w-3xl mx-auto text-justify space-y-6">
+            <p>
+              Karl Bücher y Gilberto Santa Rita forman una alianza estratégica, comparten la misma visión analítica y detallada de los asuntos, sobre la cual desarrollan acciones concretas y definidas.
+            </p>
+            <p>
+              Complementan su metodología de trabajo con una visión teórica dogmática y la práctica procesal y argumentativa.
+            </p>
+            <p>
+              El análisis y tratamiento actual de los delitos es específico y meticuloso, ciertos detalles impactan profundamente en las consecuencias y efectos de los casos expuestos ante las autoridades.
+            </p>
+            <p>
+              Son conscientes de la importancia del análisis detallado de los asuntos, evitando acciones apresuradas o recomendaciones superfluas.
+            </p>
+            <p>
+              Ambos litigaron bajo el anterior sistema de procesamiento penal, y buscan un nuevo enfoque para la atención de los asuntos y la Justicia en México.
+            </p>
+          </div>
+
+          {/* Bloques de valores */}
           <div className="mt-16 grid grid-cols-1 md:grid-cols-3 gap-12">
             <div className="text-center">
               <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-6">
@@ -30,7 +42,7 @@ const AboutSection = () => {
                 Evaluación minuciosa de cada caso para desarrollar la mejor estrategia de defensa.
               </p>
             </div>
-            
+
             <div className="text-center">
               <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-6">
                 <div className="w-8 h-8 bg-primary rounded-full"></div>
@@ -42,7 +54,7 @@ const AboutSection = () => {
                 Mantenemos informados a nuestros clientes en cada etapa del proceso legal.
               </p>
             </div>
-            
+
             <div className="text-center">
               <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-6">
                 <div className="w-8 h-8 bg-primary rounded-full"></div>
