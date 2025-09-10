@@ -60,12 +60,9 @@ const Footer = () => {
               Servicios
             </h3>
             <ul className="space-y-3 text-white/80">
-              <li>Defensa Penal</li>
               <li>Asesoría Legal</li>
-              <li>Representación en Juicios</li>
-              <li>Atención de Emergencia</li>
-              <li>Delitos Empresariales</li>
-              <li>Mediación y Conciliación</li>
+              <li>Acompañamiento legal</li>
+              <li>Alternativas y enfoque integral</li>
             </ul>
           </div>
 
@@ -78,18 +75,18 @@ const Footer = () => {
               <div className="flex items-start">
                 <MapPin className="h-5 w-5 text-primary mr-3 mt-0.5 flex-shrink-0" />
                 <div className="text-white/80 text-sm">
-                  Av. Reforma 250, Piso 15<br />
-                  Col. Juárez, CDMX<br />
-                  C.P. 06600
+                  Paseo de los Tamarindos 400-B Piso 6<br />
+                  Col. Bosques de las Lomas, Ciudad de México />
+                  C.P. 05120, CDMX
                 </div>
               </div>
               <div className="flex items-center">
                 <Phone className="h-5 w-5 text-primary mr-3 flex-shrink-0" />
-                <div className="text-white/80 text-sm">+52 55 1234-5678</div>
+                <div className="text-white/80 text-sm">+52 55 6820-5547</div>
               </div>
               <div className="flex items-center">
                 <Mail className="h-5 w-5 text-primary mr-3 flex-shrink-0" />
-                <div className="text-white/80 text-sm">info@buchersantarita.mx</div>
+                <div className="text-white/80 text-sm">gs@bsrabogados.net</div>
               </div>
             </div>
           </div>
