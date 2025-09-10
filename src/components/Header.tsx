@@ -55,7 +55,7 @@ const Header = () => {
                 onClick={() => scrollToSection("contacto")}
                 className="bg-primary hover:bg-primary/90 text-primary-foreground font-open-sans font-semibold w-fit"
               >
-                Agendar Consulta
+                Contacto
               </Button>
             </nav>
           </div>
