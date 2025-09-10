@@ -39,8 +39,8 @@ const Header = () => {
               {[
                 { id: "inicio", label: "Inicio" },
                 { id: "nosotros", label: "Sobre Nosotros" },
-                { id: "socios", label: "Socios" },
-                { id: "servicios", label: "Servicios" },
+                { id: "socios", label: "Servicios" },
+                { id: "servicios", label: "Socios" },
                 { id: "contacto", label: "Contacto" },
               ].map((item) => (
                 <button
