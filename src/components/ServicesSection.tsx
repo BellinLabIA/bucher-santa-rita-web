@@ -7,17 +7,17 @@ const ServicesSection = () => {
     {
       icon: <FileCheck className="h-8 w-8 text-primary" />,
       title: "Asesoría Legal",
-      description: "Consultoría preventiva y estratégica para evitar problemas legales y proteger sus intereses.",
+      description: "Consultoría preventiva y estratégica. Análisis jurídico y diagnóstico de casos.",
     },
     {
       icon: <UserCheck className="h-8 w-8 text-primary" />,
-      title: "Representación en Juicios",
-      description: "Defensa integral durante todo el proceso judicial con estrategias personalizadas para cada caso.",
+      title: "Acompañamiento legal ",
+      description: "Representación legal especializada ante las autoridades ministeriales y judiciales. Defensa y asesoría integral durante todo el procedimiento.",
     },
     {
       icon: <Users className="h-8 w-8 text-primary" />,
-      title: "Mediación y Conciliación",
-      description: "Resolución alternativa de conflictos para encontrar soluciones eficaces fuera del litigio.",
+      title: "Alternativas y enfoque integral",
+      description: "Aplicación de medios alternos como mediación y conciliación, tendientes a evitar procedimientos burocráticos y facilitar soluciones ágiles dependiendo de los intereses y necesidades de cada cliente. ",
     }
   ];
 
@@ -29,8 +29,8 @@ const ServicesSection = () => {
             Nuestros <span className="text-primary">Servicios</span>
           </h2>
           <p className="text-lg text-law-gray leading-relaxed">
-            Ofrecemos una amplia gama de servicios legales especializados en derecho penal, 
-            adaptados a las necesidades específicas de cada cliente.
+            Ofrecemos una amplia gama de servicios jurídicos, conforme a las necesidades concretas  
+            de cada cliente y cada caso en particular.
           </p>
         </div>
 
