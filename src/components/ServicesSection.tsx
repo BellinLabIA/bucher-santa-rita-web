@@ -3,11 +3,7 @@ import { Gavel, FileCheck, UserCheck, Users } from "lucide-react";
 
 const ServicesSection = () => {
   const services = [
-    {
-      icon: <Gavel className="h-8 w-8 text-primary" />,
-      title: "Defensa Penal",
-      description: "Representación legal especializada en todos los aspectos del derecho penal, desde delitos menores hasta casos complejos.",
-    },
+   
     {
       icon: <FileCheck className="h-8 w-8 text-primary" />,
       title: "Asesoría Legal",
