@@ -39,7 +39,7 @@ const AboutSection = () => {
                 Análisis Estratégico
               </h3>
               <p className="text-muted-foreground font-open-sans">
-                Evaluación minuciosa de cada caso para desarrollar la mejor estrategia de defensa.
+                Evaluación minuciosa de cada caso para desarrollar la mejor estrategia de defensa y acusación, incorporando criterios de perspectiva de género, ambiental, victimo-dogmática y derechos humanos.
               </p>
             </div>
 
