@@ -15,7 +15,7 @@ const PartnersSection = () => {
         <div className="max-w-6xl mx-auto space-y-16">
           {/* Karl Bucher */}
           <div className="flex flex-col lg:flex-row items-start gap-12 bg-white/5 backdrop-blur-sm rounded-2xl p-8 lg:p-12">
-            <div className="lg:w-1/3">
+            <div className="lg:w-1/3 flex flex-col items-start">
               <img 
                 src={karlBucher}
                 alt="Karl Bucher"
@@ -54,7 +54,7 @@ const PartnersSection = () => {
 
           {/* Gilberto Santa Rita Tamés */}
           <div className="flex flex-col lg:flex-row-reverse items-start gap-12 bg-white/5 backdrop-blur-sm rounded-2xl p-8 lg:p-12">
-            <div className="lg:w-1/3">
+            <div className="lg:w-1/3 flex flex-col items-start">
               <img 
                 src={gilbertoSantaRita}
                 alt="Gilberto Santa Rita Tamés"
