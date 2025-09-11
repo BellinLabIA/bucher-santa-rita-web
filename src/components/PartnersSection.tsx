@@ -37,7 +37,7 @@ const PartnersSection = () => {
                 <p>
                   Define estrategias que trascienden a resultados concretos. Fomenta comunicaciones efectivas y permanentes con sus clientes, con quienes sostiene un involucramiento activo y coordinado para la mejor solución de las causas que ha tenido el privilegio y ha decidido representar. Es promotor de la transparencia y la honestidad.
                 </p>
-                <ul className="list-disc list-inside space-y-2 mt-4 w-full">
+                <ul className="list-disc list-inside space-y-2 mt-4 w-full text-justify">
                   <li>Licenciado en Derecho por la Universidad Iberoamericana.</li>
                   <li>Maestro en Argumentación Jurídica por el Centro de Estudios Jurídicos Carbonell (reconocimiento promedio sobresaliente).</li>
                   <li>Especialidad en Sistema Acusatorio por la Escuela Libre de Derecho.</li>
@@ -79,25 +79,8 @@ const PartnersSection = () => {
                 <p>
                   Ha tenido una intensa labor desde la academia durante más de 10 años, formando parte del Sistema Nacional de Investigadores (SNI-NIVEL 1), recibiendo diferentes premios y galardones a nivel nacional e internacional. Asimismo, traduce textos jurídicos en alemán e inglés.
                 </p>
-                <ul className="list-disc list-inside space-y-2 mt-4 w-full">
+                <ul className="list-disc list-inside space-y-2 mt-4 w-full text-justify">
                   <li>Doctorado cum laude en Derecho penal y procesal, por la Universidad de Sevilla.</li>
                   <li>Diploma de Estudios Avanzados por la Universidad de Sevilla.</li>
                   <li>Licenciado en Derecho por la Universidad Iberoamericana, Ciudad de México.</li>
                 </ul>
-                <p className="font-semibold mt-4">Libros de autoría exclusiva:</p>
-                <ul className="list-disc list-inside space-y-2 w-full">
-                  <li><em>El delito de organización terrorista. Un modelo de Derecho penal del enemigo</em>, JM BOSCH, Barcelona, 2015.</li>
-                  <li><em>Sistema de combate a la violencia de género</em>, Flores Editor y Distribuidor, CDMX, 2017.</li>
-                  <li><em>Legítima defensa</em>, Flores Editor y Distribuidor, CDMX, 2022.</li>
-                  <li><em>Criterios de oportunidad</em>, Flores Editor y Distribuidor, CDMX, 2023.</li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-  );
-};
-
-export default PartnersSection;
