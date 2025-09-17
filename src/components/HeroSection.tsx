@@ -8,7 +8,7 @@ const HeroSection = () => {
       className="relative min-h-screen flex items-center justify-center bg-cover bg-center bg-no-repeat"
       style={{ backgroundImage: `url(${fondo})` }}
     >
-      <div className="absolute inset-0 bg-black/0 z-0" /> {/* Oscurecer un poco el fondo si lo deseas */}
+      
 
       <div className="relative z-10 w-full px-4">
         <div className="flex items-center justify-center min-h-screen">
