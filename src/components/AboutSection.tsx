@@ -3,14 +3,14 @@ const AboutSection = () => {
     <section id="nosotros" className="py-20 bg-background">
       <div className="container mx-auto px-4">
         <div className="max-w-4xl mx-auto text-center">
-          {/* Título agregado */}
+          {/* Título */}
           <h2 className="text-3xl md:text-4xl font-playfair font-bold text-primary mb-4">
             Abogados Penalistas
           </h2>
 
           <div className="w-24 h-1 bg-primary mx-auto mb-12"></div>
 
-          {/* Texto justificado y con separación de párrafos */}
+          {/* Texto principal justificado */}
           <div className="text-lg md:text-xl leading-relaxed text-muted-foreground font-open-sans max-w-3xl mx-auto text-justify space-y-6">
             <p>
               Karl Bücher y Gilberto Santa Rita forman una alianza estratégica, comparten la misma visión analítica y detallada de los asuntos, sobre la cual desarrollan acciones concretas y definidas.
@@ -29,7 +29,7 @@ const AboutSection = () => {
             </p>
           </div>
 
-          {/* Bloques de valores */}
+          {/* Bloques de servicios con texto justificado */}
           <div className="mt-16 grid grid-cols-1 md:grid-cols-3 gap-12">
             <div className="text-center">
               <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-6">
@@ -38,7 +38,7 @@ const AboutSection = () => {
               <h3 className="text-xl font-playfair font-semibold text-foreground mb-4">
                 Análisis Estratégico
               </h3>
-              <p className="text-muted-foreground font-open-sans">
+              <p className="text-muted-foreground font-open-sans text-justify">
                 Evaluación minuciosa de cada caso para desarrollar la mejor estrategia de defensa y acusación, incorporando criterios de perspectiva de género, ambiental, victimo-dogmática y derechos humanos.
               </p>
             </div>
@@ -50,7 +50,7 @@ const AboutSection = () => {
               <h3 className="text-xl font-playfair font-semibold text-foreground mb-4">
                 Comunicación Efectiva
               </h3>
-              <p className="text-muted-foreground font-open-sans">
+              <p className="text-muted-foreground font-open-sans text-justify">
                 Mantenemos informados a nuestros clientes en cada etapa del proceso legal.
               </p>
             </div>
@@ -62,7 +62,7 @@ const AboutSection = () => {
               <h3 className="text-xl font-playfair font-semibold text-foreground mb-4">
                 Compromiso Total
               </h3>
-              <p className="text-muted-foreground font-open-sans">
+              <p className="text-muted-foreground font-open-sans text-justify">
                 Dedicación completa a la defensa de los derechos e intereses de nuestros clientes.
               </p>
             </div>
