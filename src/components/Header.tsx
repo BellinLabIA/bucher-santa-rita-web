@@ -14,7 +14,7 @@ const Header = () => {
   };
 
   return (
-    <header className="fixed top-0 left-0 right-0 z-50 bg-background/95 backdrop-blur-sm border-b border-border">
+    <header className="fixed top-0 left-0 right-0 z-50 bg-transparent backdrop-blur-sm border-b border-border">
       <div className="container mx-auto px-4 py-4">
         <div className="flex items-center justify-between">
           {/* Logo */}
@@ -27,14 +27,17 @@ const Header = () => {
           </div>
 
           {/* Menú hamburguesa (visible siempre) */}
-          <button onClick={() => setIsMenuOpen(!isMenuOpen)} className="text-foreground focus:outline-none">
+          <button
+            onClick={() => setIsMenuOpen(!isMenuOpen)}
+            className="text-foreground focus:outline-none"
+          >
             {isMenuOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
           </button>
         </div>
 
         {/* Menú desplegable */}
         {isMenuOpen && (
-          <div className="mt-4 py-4 border-t border-border">
+          <div className="mt-4 py-4 border-t border-border bg-corp-navy rounded-xl">
             <nav className="flex flex-col space-y-4">
               {[
                 { id: "inicio", label: "Inicio" },
