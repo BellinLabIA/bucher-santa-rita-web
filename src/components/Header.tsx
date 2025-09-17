@@ -26,7 +26,7 @@ const Header = () => {
             />
           </div>
 
-          {/* Menú hamburguesa (visible siempre) */}
+          {/* Menú hamburguesa */}
           <button
             onClick={() => setIsMenuOpen(!isMenuOpen)}
             className="text-foreground focus:outline-none"
@@ -35,15 +35,15 @@ const Header = () => {
           </button>
         </div>
 
-        {/* Menú desplegable */}
+        {/* Menú desplegable corregido */}
         {isMenuOpen && (
-          <div className="mt-4 py-4 border-t border-border bg-corp-navy rounded-xl">
+          <div className="mt-4 py-4 border-t border-border bg-white shadow-md">
             <nav className="flex flex-col space-y-4">
               {[
                 { id: "inicio", label: "Inicio" },
                 { id: "nosotros", label: "Sobre Nosotros" },
-                { id: "socios", label: "Servicios" },
-                { id: "servicios", label: "Socios" },
+                { id: "servicios", label: "Servicios" },
+                { id: "socios", label: "Socios" },
                 { id: "contacto", label: "Contacto" },
               ].map((item) => (
                 <button
