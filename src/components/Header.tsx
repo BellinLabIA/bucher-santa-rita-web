@@ -14,7 +14,11 @@ const Header = () => {
   };
 
   return (
-    <header className={`fixed top-0 left-0 right-0 z-50 bg-white bg-opacity-90 backdrop-blur-sm border-b border-border transition-all duration-300`}>
+    <header
+      className={`fixed top-0 left-0 right-0 z-50 bg-white bg-opacity-90 backdrop-blur-sm border-b border-border transition-all duration-300 overflow-hidden ${
+        isMenuOpen ? "pb-6" : "pb-0"
+      }`}
+    >
       <div className="px-4 py-4 flex items-center justify-between">
         {/* Logo */}
         <div className="h-12 flex items-center">
@@ -34,9 +38,9 @@ const Header = () => {
         </button>
       </div>
 
-      {/* Menú expandido dentro del mismo header */}
+      {/* Menú expandido en el mismo fondo */}
       {isMenuOpen && (
-        <nav className="px-4 pb-4 flex flex-col space-y-4">
+        <div className="px-4 pt-2 flex flex-col space-y-4">
           {[
             { id: "inicio", label: "Inicio" },
             { id: "nosotros", label: "Sobre Nosotros" },
@@ -54,11 +58,11 @@ const Header = () => {
           ))}
           <Button
             onClick={() => scrollToSection("contacto")}
-            className="bg-primary/90 hover:bg-primary text-primary-foreground font-open-sans font-semibold w-fit shadow-none"
+            className="bg-primary hover:bg-primary/90 text-primary-foreground font-open-sans font-semibold w-fit"
           >
             Contacto
           </Button>
-        </nav>
+        </div>
       )}
     </header>
   );
