@@ -15,11 +15,11 @@ const Header = () => {
 
   return (
     <header
-      className={`fixed top-0 left-0 right-0 z-50 bg-white bg-opacity-90 backdrop-blur-sm border-b border-border transition-all duration-300 overflow-hidden ${
+      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 backdrop-blur-sm ${
         isMenuOpen ? "pb-6" : "pb-0"
       }`}
     >
-      <div className="px-4 py-4 flex items-center justify-between">
+      <div className="px-4 pt-4 flex items-center justify-between">
         {/* Logo */}
         <div className="h-12 flex items-center">
           <img
@@ -38,9 +38,9 @@ const Header = () => {
         </button>
       </div>
 
-      {/* Menú expandido en el mismo fondo */}
+      {/* Menú desplegado directamente sobre el fondo del header */}
       {isMenuOpen && (
-        <div className="px-4 pt-2 flex flex-col space-y-4">
+        <div className="px-4 pt-4 flex flex-col space-y-4">
           {[
             { id: "inicio", label: "Inicio" },
             { id: "nosotros", label: "Sobre Nosotros" },
