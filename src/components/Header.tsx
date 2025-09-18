@@ -37,8 +37,8 @@ const Header = () => {
 
         {/* Menú desplegable transparente */}
         {isMenuOpen && (
-          <div className="mt-4 py-4 border-t border-border bg-transparent backdrop-blur-sm shadow-md">
-            <nav className="flex flex-col space-y-4">
+          <div className="mt-4 py-4 border-t border-border bg-transparent backdrop-blur-sm shadow-none">
+            <nav className="flex flex-col space-y-4 bg-transparent p-0">
               {[
                 { id: "inicio", label: "Inicio" },
                 { id: "nosotros", label: "Sobre Nosotros" },
@@ -56,7 +56,7 @@ const Header = () => {
               ))}
               <Button
                 onClick={() => scrollToSection("contacto")}
-                className="bg-primary hover:bg-primary/90 text-primary-foreground font-open-sans font-semibold w-fit"
+                className="bg-primary/90 hover:bg-primary text-primary-foreground font-open-sans font-semibold w-fit shadow-none"
               >
                 Contacto
               </Button>
