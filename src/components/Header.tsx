@@ -14,10 +14,8 @@ const Header = () => {
 
   return (
     <header
-      className={`fixed top-0 left-0 right-0 z-50 bg-white/90 backdrop-blur-sm border-b border-border overflow-hidden transition-all duration-300 ${
-        isMenuOpen ? "max-h-[400px]" : "max-h-[80px]"
-      }`}
-    >
+      header className="fixed top-0 left-0 right-0 z-50 bg-background/95 backdrop-blur-sm border-b border-border">
+
       <div className="container mx-auto px-4 py-4">
         <div className="flex items-center justify-between px-2">
           {/* Logo */}
