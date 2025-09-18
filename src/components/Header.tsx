@@ -15,55 +15,57 @@ const Header = () => {
 
   return (
     <header
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 backdrop-blur-sm ${
+      className={`fixed top-0 left-0 right-0 z-50 border-b border-border transition-all duration-300 ${
         isMenuOpen ? "pb-6" : "pb-0"
       }`}
     >
-      <div className="px-4 pt-4 flex items-center justify-between">
-        {/* Logo */}
-        <div className="h-12 flex items-center">
-          <img
-            src={logoAzul}
-            alt="Bücher Santa Rita Abogados"
-            className="h-12 w-auto object-contain"
-          />
-        </div>
+      <div className="w-full px-4 pt-4">
+        <div className="flex items-center justify-between">
+          {/* Logo */}
+          <div className="h-12 flex items-center">
+            <img
+              src={logoAzul}
+              alt="Bücher Santa Rita Abogados"
+              className="h-12 w-auto object-contain"
+            />
+          </div>
 
-        {/* Menú hamburguesa */}
-        <button
-          onClick={() => setIsMenuOpen(!isMenuOpen)}
-          className="text-foreground focus:outline-none"
-        >
-          {isMenuOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
-        </button>
-      </div>
-
-      {/* Menú desplegado directamente sobre el fondo del header */}
-      {isMenuOpen && (
-        <div className="px-4 pt-4 flex flex-col space-y-4">
-          {[
-            { id: "inicio", label: "Inicio" },
-            { id: "nosotros", label: "Sobre Nosotros" },
-            { id: "servicios", label: "Servicios" },
-            { id: "socios", label: "Socios" },
-            { id: "contacto", label: "Contacto" },
-          ].map((item) => (
-            <button
-              key={item.id}
-              onClick={() => scrollToSection(item.id)}
-              className="text-left text-foreground hover:text-primary transition-colors font-open-sans font-medium"
-            >
-              {item.label}
-            </button>
-          ))}
-          <Button
-            onClick={() => scrollToSection("contacto")}
-            className="bg-primary hover:bg-primary/90 text-primary-foreground font-open-sans font-semibold w-fit"
+          {/* Menú hamburguesa */}
+          <button
+            onClick={() => setIsMenuOpen(!isMenuOpen)}
+            className="text-foreground focus:outline-none"
           >
-            Contacto
-          </Button>
+            {isMenuOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
+          </button>
         </div>
-      )}
+
+        {/* Menú que aparece abajo dentro del mismo header */}
+        {isMenuOpen && (
+          <nav className="mt-4 flex flex-col space-y-4">
+            {[
+              { id: "inicio", label: "Inicio" },
+              { id: "nosotros", label: "Sobre Nosotros" },
+              { id: "servicios", label: "Servicios" },
+              { id: "socios", label: "Socios" },
+              { id: "contacto", label: "Contacto" },
+            ].map((item) => (
+              <button
+                key={item.id}
+                onClick={() => scrollToSection(item.id)}
+                className="text-left text-foreground hover:text-primary transition-colors font-open-sans font-medium"
+              >
+                {item.label}
+              </button>
+            ))}
+            <Button
+              onClick={() => scrollToSection("contacto")}
+              className="bg-primary hover:bg-primary/90 text-primary-foreground font-open-sans font-semibold w-fit"
+            >
+              Agendar Consulta
+            </Button>
+          </nav>
+        )}
+      </div>
     </header>
   );
 };
