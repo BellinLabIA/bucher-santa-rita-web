@@ -14,7 +14,7 @@ const Header = () => {
   };
 
   return (
-    <header className="fixed top-0 left-0 right-0 z-50 bg-white bg-opacity-90 backdrop-blur-sm border-b border-border">
+    <header className={`fixed top-0 left-0 right-0 z-50 bg-white bg-opacity-90 backdrop-blur-sm border-b border-border transition-all duration-300`}>
       <div className="px-4 py-4 flex items-center justify-between">
         {/* Logo */}
         <div className="h-12 flex items-center">
@@ -34,33 +34,31 @@ const Header = () => {
         </button>
       </div>
 
-      {/* Menú desplegable transparente TOTAL */}
+      {/* Menú expandido dentro del mismo header */}
       {isMenuOpen && (
-        <div className="w-full px-4 pt-2 bg-transparent backdrop-blur-sm">
-          <nav className="flex flex-col space-y-4 bg-transparent">
-            {[
-              { id: "inicio", label: "Inicio" },
-              { id: "nosotros", label: "Sobre Nosotros" },
-              { id: "servicios", label: "Servicios" },
-              { id: "socios", label: "Socios" },
-              { id: "contacto", label: "Contacto" },
-            ].map((item) => (
-              <button
-                key={item.id}
-                onClick={() => scrollToSection(item.id)}
-                className="text-left text-foreground hover:text-primary transition-colors font-open-sans font-medium bg-transparent"
-              >
-                {item.label}
-              </button>
-            ))}
-            <Button
-              onClick={() => scrollToSection("contacto")}
-              className="bg-primary/90 hover:bg-primary text-primary-foreground font-open-sans font-semibold w-fit shadow-none"
+        <nav className="px-4 pb-4 flex flex-col space-y-4">
+          {[
+            { id: "inicio", label: "Inicio" },
+            { id: "nosotros", label: "Sobre Nosotros" },
+            { id: "servicios", label: "Servicios" },
+            { id: "socios", label: "Socios" },
+            { id: "contacto", label: "Contacto" },
+          ].map((item) => (
+            <button
+              key={item.id}
+              onClick={() => scrollToSection(item.id)}
+              className="text-left text-foreground hover:text-primary transition-colors font-open-sans font-medium"
             >
-              Contacto
-            </Button>
-          </nav>
-        </div>
+              {item.label}
+            </button>
+          ))}
+          <Button
+            onClick={() => scrollToSection("contacto")}
+            className="bg-primary/90 hover:bg-primary text-primary-foreground font-open-sans font-semibold w-fit shadow-none"
+          >
+            Contacto
+          </Button>
+        </nav>
       )}
     </header>
   );
