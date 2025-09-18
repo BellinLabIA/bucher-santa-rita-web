@@ -35,9 +35,9 @@ const Header = () => {
           </button>
         </div>
 
-        {/* Menú desplegable corregido */}
+        {/* Menú desplegable transparente */}
         {isMenuOpen && (
-          <div className="mt-4 py-4 border-t border-border bg-white shadow-md">
+          <div className="mt-4 py-4 border-t border-border bg-transparent backdrop-blur-sm shadow-md">
             <nav className="flex flex-col space-y-4">
               {[
                 { id: "inicio", label: "Inicio" },
