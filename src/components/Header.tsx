@@ -15,11 +15,9 @@ const Header = () => {
 
   return (
     <header
-      className={`fixed top-0 left-0 right-0 z-50 border-b border-border backdrop-blur-sm transition-all duration-300 ${
-        isMenuOpen ? "bg-white/70 py-6" : "bg-white/70 py-4"
-      }`}
+      className={`fixed top-0 left-0 right-0 z-50 border-b border-border backdrop-blur-sm bg-white bg-opacity-70 transition-all duration-300`}
     >
-      <div className="container mx-auto px-6">
+      <div className="container mx-auto px-6 py-4">
         <div className="flex items-center justify-between">
           {/* Logo */}
           <div className="h-12 flex items-center">
@@ -39,9 +37,9 @@ const Header = () => {
           </button>
         </div>
 
-        {/* Menú desplegable */}
+        {/* Menú desplegable (bajo el mismo fondo del header) */}
         {isMenuOpen && (
-          <div className="mt-4">
+          <div className="mt-4 pb-4">
             <nav className="flex flex-col space-y-4">
               {[
                 { id: "inicio", label: "Inicio" },
