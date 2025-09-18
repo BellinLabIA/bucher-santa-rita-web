@@ -4,6 +4,7 @@ import { useState } from "react";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+
   const logoAzul = `${import.meta.env.BASE_URL}bsr-logo-azul.png`;
 
   const scrollToSection = (sectionId: string) => {
@@ -14,10 +15,12 @@ const Header = () => {
 
   return (
     <header
-      header className="fixed top-0 left-0 right-0 z-50 bg-background/95 backdrop-blur-sm border-b border-border">
-
-      <div className="container mx-auto px-4 py-4">
-        <div className="flex items-center justify-between px-2">
+      className={`fixed top-0 left-0 right-0 z-50 border-b border-border backdrop-blur-sm transition-all duration-300 ${
+        isMenuOpen ? "bg-white/70 py-6" : "bg-white/70 py-4"
+      }`}
+    >
+      <div className="container mx-auto px-6">
+        <div className="flex items-center justify-between">
           {/* Logo */}
           <div className="h-12 flex items-center">
             <img
@@ -36,34 +39,34 @@ const Header = () => {
           </button>
         </div>
 
-        {/* Menú desplegable dentro del mismo header */}
-        <nav
-          className={`flex flex-col space-y-4 mt-4 px-2 transition-opacity duration-300 ${
-            isMenuOpen ? "opacity-100" : "opacity-0 pointer-events-none"
-          }`}
-        >
-          {[
-            { id: "inicio", label: "Inicio" },
-            { id: "nosotros", label: "Sobre Nosotros" },
-            { id: "servicios", label: "Servicios" },
-            { id: "socios", label: "Socios" },
-            { id: "contacto", label: "Contacto" },
-          ].map((item) => (
-            <button
-              key={item.id}
-              onClick={() => scrollToSection(item.id)}
-              className="text-left text-foreground hover:text-primary transition-colors font-open-sans font-medium"
-            >
-              {item.label}
-            </button>
-          ))}
-          <Button
-            onClick={() => scrollToSection("contacto")}
-            className="bg-primary hover:bg-primary/90 text-primary-foreground font-open-sans font-semibold w-fit"
-          >
-            Agendar Consulta
-          </Button>
-        </nav>
+        {/* Menú desplegable */}
+        {isMenuOpen && (
+          <div className="mt-4">
+            <nav className="flex flex-col space-y-4">
+              {[
+                { id: "inicio", label: "Inicio" },
+                { id: "nosotros", label: "Sobre Nosotros" },
+                { id: "servicios", label: "Servicios" },
+                { id: "socios", label: "Socios" },
+                { id: "contacto", label: "Contacto" },
+              ].map((item) => (
+                <button
+                  key={item.id}
+                  onClick={() => scrollToSection(item.id)}
+                  className="text-left text-foreground hover:text-primary transition-colors font-open-sans font-medium"
+                >
+                  {item.label}
+                </button>
+              ))}
+              <Button
+                onClick={() => scrollToSection("contacto")}
+                className="bg-primary hover:bg-primary/90 text-primary-foreground font-open-sans font-semibold w-fit"
+              >
+                Contacto
+              </Button>
+            </nav>
+          </div>
+        )}
       </div>
     </header>
   );
