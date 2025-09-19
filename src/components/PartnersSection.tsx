@@ -28,7 +28,7 @@ const PartnersSection = () => {
               </h3>
               <div className="w-16 h-1 bg-primary mb-6"></div>
               <p>
-                Se desempeña en la práctica libre del ejercicio profesional como abogado ligante en materia penal, especializado en estrategias procesales y argumentativas, principalmente dedicado a la atención de asuntos relacionados con aspectos patrimoniales, fiscales y financieros.
+                Se desempeña en la práctica libre del ejercicio profesional como abogado litigante en materia penal, especializado en estrategias procesales y argumentativas, principalmente dedicado a la atención de asuntos relacionados con aspectos patrimoniales, fiscales y financieros.
               </p>
               <p>
                 Tiene amplia experiencia en la práctica, ejerce profesionalmente desde hace más de 15 años, lo que le ha permitido desarrollarse adquiriendo un estilo propio.
